@@ -1,0 +1,42 @@
+.search__direction {
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.search__question {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  border: none;
+  width: 280px;
+  height: 58px;
+}
+
+.search__hotel {
+  color: @white;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: @basic-blue;
+  font-size: 26px;
+  line-height: 26px;
+  padding: 14.5px 32px 17.5px 32px;
+}
+
+.search__hotel:hover {
+  background-color: @basic-blue-hover;
+}
+
+.search__hotel:focus,
+.search__hotel:active {
+  color: fadeout(@white, 30%);
+  background-color: @basic-blue-down;
+}
+
+.search__hotel:disabled {
+  background-color: @beige;
+}
