@@ -1,3 +1,9 @@
+.advantages__intro {
+  color: @brown;
+  font-size: 21px;
+  font-weight: bold;
+}
+
 .advantages__list {
   list-style: none;
 }
@@ -9,4 +15,14 @@
 .advantages__title {
   font-size: 21px;
   font-weight: bold;
+}
+
+.advantages__item:nth-child(3),
+.advantages__item:nth-child(4),
+.advantages__item:nth-child(5) {
+  .advantages__number,
+  .advantages__description {
+    color: @brown;
+  }
+  background-color: @grey-light;
 }
