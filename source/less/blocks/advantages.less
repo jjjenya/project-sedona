@@ -20,17 +20,16 @@
 
 .advantages__item:nth-child(1),
 .advantages__item:nth-child(2) {
+  .advantages__title {
+    color: @white;
+  }
+
   .advantages__number,
   .advantages__description {
     color: @white;
     font-size: 14px;
     line-height: 21px;
   }
-
-  .advantages__title {
-    color: @white;
-  }
-  background-color: @basic-blue;
 }
 
 .advantages__item:nth-child(3),
@@ -43,4 +42,8 @@
     line-height: 21px;
   }
   background-color: @grey-light;
+}
+
+.advantages__text {
+  background-color: @basic-blue;
 }
