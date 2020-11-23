@@ -9,16 +9,18 @@
   line-height: 24px;
 }
 
-.search__hotel:hover {
-  background-color: @basic-blue-hover;
-}
+.search__hotel {
+  &:hover {
+    background-color: @basic-blue-hover;
+  }
 
-.search__hotel:focus,
-.search__hotel:active {
-  opacity: 0.3;
-  background-color: @basic-blue-down;
-}
+  &:focus,
+  &:active {
+    opacity: 0.3;
+    background-color: @basic-blue-down;
+  }
 
-.search__hotel:disabled {
-  background-color: @beige;
+  &:disabled {
+    background-color: @beige;
+  }
 }

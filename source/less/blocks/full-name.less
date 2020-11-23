@@ -1,3 +1,7 @@
+.full-name {
+  border: none;
+}
+
 .full-name__title {
   font-weight: bold;
   text-transform: uppercase;
@@ -17,18 +21,18 @@
   font-weight: bold;
   background-color: @grey-form;
   border: none;
-}
 
-.full-name__field::placeholder {
-  color: @black;
-}
+  &::placeholder {
+    color: @black;
+  }
 
-.full-name__field:hover,
-.full-name__field:focus {
-  background-color: @grey-dark-full-name;
-}
+  &:hover,
+  &:focus {
+    background-color: @grey-dark-full-name;
+  }
 
-.full-name__field:active {
-  background-color: @white;
-  border: 4px solid @grey-dark-full-name;
+  &:active {
+    background-color: @white;
+    border: 4px solid @grey-dark-full-name;
+  }
 }
