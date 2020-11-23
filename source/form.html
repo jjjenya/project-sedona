@@ -24,7 +24,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link" href="catalog.html">
               Фото и видео
             </a>
           </li>
@@ -90,16 +90,18 @@
         </ul>
       </fieldset>
 
-      <fieldset class="contacts">
-        <legend class="contacts__title">Контактная информация:</legend>
-        <ul class="contacts__list" role="none">
-          <li class="contacts__item">
-            <label class="contacts__description" for="field-tel">Контактный телефон*:</label>
-            <input class="contacts__field" type="tel" name="tel" id="field-tel" placeholder="Введите телефон" required>
+      <fieldset class="contacts-review">
+        <legend class="visually-hidden">Контактная информация:</legend>
+        <ul class="contacts-review__list" role="none">
+          <li class="contacts-review__item">
+            <label class="contacts-review__description" for="field-tel">Контактный телефон*:</label>
+            <input class="contacts-review__field" type="tel" name="tel" id="field-tel" placeholder="Введите телефон"
+              required>
           </li>
-          <li class="contacts__item">
-            <label class="contacts__description" for="e-mail">Электронная почта*:</label>
-            <input class="contacts__field" type="email" name="e-mail" id="e-mail" placeholder="Введите е-mail" required>
+          <li class="contacts-review__item">
+            <label class="contacts-review__description" for="e-mail">Электронная почта*:</label>
+            <input class="contacts-review__field" type="email" name="e-mail" id="e-mail" placeholder="Введите е-mail"
+              required>
           </li>
         </ul>
       </fieldset>
@@ -149,12 +151,12 @@
 
       <div class="emotion">
         <label class="emotion__description" for="field-emotion">Опишите свои эмоции:</label>
-        <textarea class="emotion__field" name="emotion" id="field-emotion"
-          rows="5">Опишите подробно все свои восторги</textarea>
+        <textarea class="emotion__field" name="emotion" id="field-emotion" rows="5"
+          placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
 
       <div class="form-button">
-        <input class="form-button__push" type="submit" value="Отправить отзыв">
+        <input class="form-button__push button" type="submit" value="Отправить отзыв">
       </div>
 
     </form>
@@ -163,8 +165,8 @@
 
   <footer class="page-footer main-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__contacts contacts">
-        <p class="contacts__hashtag">#VISITSEDONA</p>
+      <div class="page-footer__hashtag">
+        <p class="hashtag">#VISITSEDONA</p>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
