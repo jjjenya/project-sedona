@@ -2,7 +2,6 @@
   font-weight: bold;
 }
 
-
 .advantages__intro {
   color: @brown;
   font-size: 14px;
@@ -11,6 +10,11 @@
 
 .advantages__list {
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .advantages__title {

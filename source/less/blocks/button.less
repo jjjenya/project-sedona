@@ -4,8 +4,26 @@
   color: @white;
   vertical-align: middle;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: @basic-blue;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+
+  &:hover {
+    background-color: @basic-blue-hover;
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+    background-color: @basic-blue-down;
+    text-decoration: none;
+  }
+
+  &:disabled {
+    background-color: @beige;
+    text-decoration: none;
+  }
 }
