@@ -2,6 +2,11 @@
   background-color: @white;
   display: flex;
   flex-direction: column;
+
+  outline: 5px solid rgba(234, 0, 255, 0.8);
+  outline-offset: -5px;
+
+  width: 100%;
 }
 
 .page-header__line {
@@ -12,10 +17,11 @@
 
   order: 2;
 
-  width: 101.7px;
+  width: 100%;
 
   display: block;
-  margin: auto;
+  // margin: auto;
+
   background-color: @white;
 
   @media (min-width: @tablet-width) {
@@ -35,4 +41,26 @@
 
   outline: 5px solid rgba(0, 38, 255, 0.8);
   outline-offset: -5px;
+
+  width: 101.7px;
+}
+
+.page-header__toggle {
+
+
+  position: absolute;
+
+  border: @white;
+
+  margin-top: 17px;
+  right: 20.1px;
+
+  outline: 2px solid rgba(30, 255, 0, 0.8);
+  outline-offset: -2px;
+
+  // position: absolute;
+  // left: 86.56%;
+  // right: 6.28%;
+  // top: 6.65%;
+  // bottom: 92.74%;
 }
