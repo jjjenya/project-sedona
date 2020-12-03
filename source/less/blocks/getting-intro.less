@@ -1,0 +1,68 @@
+.getting-intro {
+  // position: relative;
+
+  outline: 5px solid rgba(255, 81, 0, 0.981);
+  outline-offset: -5px;
+
+  height: 389px;
+  width: 100%;
+}
+
+.getting-intro__wrapper-image {
+  position: relative;
+  // background-position: center bottom;
+  // background-repeat: no-repeat;
+
+  background-image: url("/source/img/background-foto.jpg");
+}
+
+.getting-intro__image {
+  outline: 5px solid rgba(0, 255, 145, 0.981);
+  outline-offset: -5px;
+
+  position: absolute;
+  z-index: 7;
+
+  top: 90px;
+  // right: 310px;
+
+  ::after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 57px;
+    background-image: url("/source/img/triangle.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 57px;
+  }
+}
+
+.getting-intro__slogan {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.getting-intro__intro {
+  color: @brown;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+// .getting__wrapper-triangle {
+//   position: absolute;
+//   z-index: 4;
+// }
+
+// .image-triangle {
+//   outline: 5px solid rgba(13, 0, 255, 0.981);
+//   outline-offset: -5px;
+//   background-color: orchid;
+// }
+
+// .getting__wrapper-background {
+//   outline: 5px solid rgba(0, 30, 255, 0.981);
+//   outline-offset: -5px;
+// }
