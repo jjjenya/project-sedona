@@ -10,14 +10,27 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="#" width="101.7" height="84" alt="Седона">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+
+    <div class="page-header__line">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Седона">
+      </a>
+
+      <button class="page-header__toggle" type="button" aria-label="Открыть меню">
+        <img class="page-header__toggle-image" src="img/icon-menu.svg" width="22.9px" height="22px">
       </button>
+    </div>
+
+    <nav class="main-nav">
+
       <div class="main-nav__wrapper">
+
+        <button class="main-nav__button-cloze" type="button" aria-label="Закрыть меню">
+          <span aria-hidden="true">
+            <img class="main-nav__button-cloze-image" src="img/icon-cloze.svg" width="22.2px" height="22.2px">
+          </span>
+        </button>
+
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">
@@ -30,7 +43,10 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link"></a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">
               Форма отзыва
             </a>
           </li>
@@ -40,6 +56,7 @@
             </a>
           </li>
         </ul>
+
       </div>
     </nav>
   </header>
