@@ -1,6 +1,7 @@
 .button {
   border: none;
   height: 58px;
+  // width: 280px;
   color: @white;
   vertical-align: middle;
   text-transform: uppercase;
@@ -26,5 +27,9 @@
   &:disabled {
     background-color: @beige;
     text-decoration: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 14.5px 121px 17.5px 121px;
   }
 }

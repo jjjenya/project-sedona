@@ -4,8 +4,10 @@
   display: flex;
   flex-direction: column;
 
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    justify-content: space-around;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,6 +19,10 @@
   font-weight: bold;
   text-align: left;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }
 
 .recommendation__description {
@@ -24,6 +30,11 @@
   font-size: 14px;
   line-height: 21px;
   text-align: left;
+
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }
 
 .recommendation__item {
@@ -33,32 +44,40 @@
 
 
 .recommendation__item--hotel {
-  // margin-top: 35px;
-  // width: 240px;
-  // height: 105px;
   padding: 35px 20px 16px 50px;
 
   // outline: 5px solid rgba(0, 255, 72, 0.8);
   // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 158px;
+    padding-bottom: 60px;
+    order: 1;
+  }
 }
 
 .recommendation__item--souvenir {
-  // width: 210px;
-  // height: 105px;
-  // margin-top: 26px;
-  // margin-bottom: 26px;
   padding: 10px 30px 16px 50px;
 
   // outline: 5px solid rgba(0, 89, 255, 0.8);
   // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 158px;
+    padding-bottom: 81px;
+    order: 3;
+  }
 }
 
 .recommendation__item--eat {
-  // width: 229px;
-  // height: 84px;
-  // margin-bottom: 35px;
   padding: 10px 40px 35px 50px;
 
   // outline: 5px solid rgba(255, 225, 0, 0.8);
   // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 157px;
+    padding-bottom: 59px;
+    order: 2;
+  }
 }
