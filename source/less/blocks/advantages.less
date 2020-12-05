@@ -10,6 +10,13 @@
 
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    .advantages__item:nth-last-child(-n+3) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 .advantages__item {
@@ -136,29 +143,107 @@
   }
 }
 
-.advantages__item:nth-last-child(-n+3) {
-  background-color: @grey-light;
-}
+// .advantages__item:nth-last-child(-n+3) {
+//   background-color: @grey-light;
+// }
 
 .advantages__wrapper-3 {
   padding: 26px 26px 24px 26px;
+  background-color: @grey-light;
 
   // outline: 5px solid rgba(0, 174, 255, 0.892);
   // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    // margin-left: 0;
+    // margin-right: 0;
+    // width: auto;
+
+    padding: 0;
+
+
+    position: absolute;
+    transform: translateX(0%);
+    // left: 0%;
+
+    width: 33vw;
+    // transform: translateX(calc((40em - 10vw)/2));
+
+    // padding: 42px 34px 63px 33px;
+
+    .advantages__title {
+      padding-left: 84px;
+      padding-right: 84px;
+    }
+
+    .advantages__description {
+      padding-left: 34px;
+      padding-right: 34px;
+      // padding-bottom: 19px;
+    }
+  }
 }
 
 .advantages__wrapper-4 {
-  padding: 25px 41px 24px 42px;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  background-color: @grey-light;
 
   // outline: 5px solid rgba(191, 0, 255, 0.892);
   // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    // margin-left: 0;
+    // margin-right: 0;
+    // transition: all 2s ease-in-out;
+
+    padding: 0;
+
+    width: 34vw;
+
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+
+    .advantages__title {
+      padding-left: 84px;
+      padding-right: 84px;
+    }
+
+    .advantages__description {
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+  }
 }
 
 .advantages__wrapper-5 {
   padding: 25px 35px 24px 35px;
+  background-color: @grey-light;
 
   // outline: 5px solid rgba(0, 255, 85, 0.892);
   // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    //   margin-left: 0;
+    // margin-right: 0;
+    padding: 0;
+    width: 33vw;
+
+    position: absolute;
+    transform: translateX(0%);
+    right: 0%;
+
+    .advantages__title {
+      padding-left: 84px;
+      padding-right: 84px;
+    }
+
+    .advantages__description {
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+  }
 }
 
 .advantages__wrapper-3,
@@ -180,4 +265,101 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  // @media (min-width: @tablet-width) {
+  //   width: 33%;
+  // }
 }
+
+
+// .advantages__item:nth-child(3),
+// .advantages__item:nth-child(4),
+// .advantages__item:nth-child(5) {
+
+
+//   background-color: @grey-light;
+
+//   outline: 5px solid rgba(0, 174, 255, 0.892);
+//   outline-offset: -5px;
+
+//   .advantages__number,
+//   .advantages__description {
+//     color: @brown;
+//     font-size: 14px;
+//     line-height: 21px;
+//     text-align: center;
+//   }
+
+//   .advantages__title {
+//     text-align: center;
+//   }
+
+//   @media (min-width: @tablet-width) {
+//     width: 33%;
+//   }
+// }
+
+// .advantages__text {
+//   background-color: @basic-blue;
+//   text-align: center;
+// }
+
+// .advantages__item:nth-child(4) {
+//   @media (min-width: @tablet-width) {
+//     position: relative;
+//     left: 33%;
+//     top: -213px;
+//   }
+
+//   // @media (min-width: @desktop-width) {
+//   //   left: 33%;
+//   //   top: -143px;
+//   // }
+// }
+
+// .advantages__wrapper-3 {
+// //   left: 66%;
+// //   top: -160px;
+
+//   @media (min-width: @tablet-width) {
+//     align-self: flex-start;
+//     justify-content: center;
+//   }
+// }
+
+// .advantages__wrapper-4 {
+//   //   left: 66%;
+//   //   top: -160px;
+
+//     @media (min-width: @tablet-width) {
+//       align-self: center;
+//       justify-content: center;
+//           top: -160px;
+
+//     }
+//   }
+
+// .advantages__wrapper-5 {
+//   //   left: 66%;
+//     top: -160px;
+
+//     @media (min-width: @tablet-width) {
+//       align-self: flex-end;
+//       justify-content: center;
+
+
+//     }
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     left: 66%;
+//     top: -286px;
+//   }
+// }
+
+// @media (min-width: @tablet-width) {
+//   .flex {
+//     display: flex;
+//     flex-direction: row;
+//   }
+// }
