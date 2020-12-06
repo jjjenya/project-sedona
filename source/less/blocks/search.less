@@ -1,9 +1,15 @@
 
+.search {
+  @media (min-width: @tablet-width) {
+    margin-top: 300px;
+  }
+}
+
 .search__preamble {
   padding: 33px 27px 41.5px 27px;
 
   @media (min-width: @tablet-width) {
-    padding: 180px 166px 51.5px 167px;
+    padding: 0 166px 51.5px 167px;
   }
 
   // outline: 5px solid rgba(0, 255, 72, 0.8);
@@ -17,10 +23,14 @@
 
 
 .search__question {
-  margin-top: 98px;
+  // margin-top: 98px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .search__direction {
