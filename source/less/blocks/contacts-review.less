@@ -1,23 +1,146 @@
 .contacts-review {
   border: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  // outline: 5px solid rgba(0, 30, 255, 0.981);
+  // outline-offset: -5px;
+}
+
+.contacts-review__title {
+  font-weight: bold;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .contacts-review__list {
   list-style: none;
+  padding: 0;
+  text-align: center;
+
+  // outline: 5px solid rgba(255, 0, 162, 0.981);
+  // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 51.5px;
+  }
 }
 
 
 .contacts-review__description {
   font-size: 14px;
   color: @brown;
+
+  text-transform: uppercase;
+
+  display: flex;
+  // text-align: left;
+  // padding-left: 42px;
+  margin-left: 42px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 22px;
+  }
 }
 
 .contacts-review__field {
+  font-size: 18px;
   font-weight: bold;
   background-color: @grey-form;
   border: none;
+  padding: 18px 0 14px 22px;
+
+  // outline: 5px solid rgba(0, 60, 255, 0.981);
+  // outline-offset: -5px;
 
   &::placeholder {
     color: @black;
+  }
+
+  @media (min-width: @tablet-width) {
+
+    width: calc(100% - 22px);
+  }
+}
+
+.contacts-review__item {
+  // clear:both;
+  // text-align:right;
+  // margin-left: 20px;
+
+  // outline: 5px solid rgba(0, 255, 85, 0.981);
+  // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.contacts-review__item:nth-child(1) {
+  margin-bottom: 14px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+
+    .contacts-review__description {
+      width: 70px;
+      margin-left: 119px;
+
+      // outline: 5px solid rgba(0, 255, 115, 0.44);
+      // outline-offset: -5px;
+    }
+
+    .contacts-review__description--hidden {
+      display: none;
+    }
+
+    .contacts-review__field {
+      width: 257px;
+      margin-left: 16px;
+    }
+  }
+}
+
+.contacts-review__item:nth-child(2) {
+  margin-bottom: 49px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+
+    .contacts-review__description {
+      margin-left: 0;
+      width: 147px;
+
+      // outline: 5px solid rgba(0, 255, 115, 0.44);
+      // outline-offset: -5px;
+    }
+
+    .contacts-review__field {
+      width: 258px;
+      margin-left: 18px;
+    }
   }
 }

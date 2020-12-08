@@ -1,13 +1,100 @@
-.reviews-preview__title {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 26px;
+.reviews-form__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  // outline: 5px solid rgba(0, 255, 145, 0.981);
+  // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.reviews-preview__intro {
-  color: @brown;
+.reviews-form__item:nth-child(1) {
+  // outline: 5px solid rgba(255, 68, 0, 0.981);
+  // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    width: 50%;
+  }
+}
+
+.reviews-form__item:nth-child(2) {
+  // outline: 5px solid rgba(255, 183, 0, 0.981);
+  // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+    width: 100%;
+  }
+}
+
+.reviews-form__item:nth-child(3) {
+  // outline: 5px solid rgba(0, 255, 85, 0.981);
+  // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    width: 50%;
+  }
+}
+
+.reviews-form__item:nth-child(4) {
+  // outline: 5px solid rgba(0, 123, 255, 0.981);
+  // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+    width: 100%;
+  }
+}
+
+.reviews-form__item:nth-child(5) {
+  // outline: 5px solid rgba(225, 0, 255, 0.981);
+  // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    order: 5;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.push {
+  // outline: 5px solid rgba(225, 0, 255, 0.981);
+  // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.push__button {
+  // outline: 5px solid rgba(0, 255, 85, 0.981);
+  // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.push__note {
+  display: none;
+
+  // outline: 5px solid rgba(0, 123, 255, 0.981);
+  // outline-offset: -5px;
+
   font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
