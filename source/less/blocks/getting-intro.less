@@ -1,0 +1,100 @@
+.getting-intro {
+  position: relative;
+
+  // outline: 5px solid rgba(255, 81, 0, 0.981);
+  // outline-offset: -5px;
+  // height: 389px;
+  // @media (min-width: @tablet-width) {
+  //   z-index: 101;
+  // }
+}
+
+.getting-intro__wrapper-image {
+  position: relative;
+  outline: 5px solid rgba(68, 0, 255, 0.981);
+  outline-offset: -5px;
+
+  background: url("../../img/background-foto-tablet.jpg") center no-repeat;
+  background-size: 389px 100%;
+
+
+  z-index: -1;
+  height: 389px;
+
+  ::before {
+    content: "";
+    position: absolute;
+    z-index: 18;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 57px;
+    background: url("../../img/triangle.svg") center no-repeat;
+    background-size: 100%;
+  }
+
+  // @media (min-width: 321px) {
+
+  //   background: url("../../img/background-foto-tablet.jpg") center no-repeat;
+  //   background-size: 100%;
+  // }
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+    background: url("../../img/background-foto-tablet.jpg") center no-repeat;
+    background-size: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../../img/background-foto-desktop.jpg") center no-repeat;
+    background-size: 100%;
+  }
+}
+
+.getting-intro__image {
+  // outline: 5px solid rgba(0, 255, 145, 0.981);
+  // outline-offset: -5px;
+
+  top: 90px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    top: 77px;
+    width: 461px;
+    height: 349.97px;
+    bottom: 91.03px;
+  }
+}
+
+.getting-intro__text {
+  padding: 32px 18px 11px 17px;
+
+  // outline: 5px solid rgba(0, 255, 145, 0.981);
+  // outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    padding: 43.5px 124px 52.5px 124px;
+  }
+}
+
+.getting-intro__slogan {
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 15px;
+  padding-left: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 250px;
+    padding-left: 250px;
+  }
+}
+
+.getting-intro__intro {
+  color: @brown;
+  font-size: 14px;
+  // margin: 0;
+}

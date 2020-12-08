@@ -1,11 +1,35 @@
 .button {
   border: none;
   height: 58px;
+  // width: 280px;
   color: @white;
   vertical-align: middle;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: @basic-blue;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  padding: 14.5px 32px 17.5px 32px;
+
+  &:hover {
+    background-color: @basic-blue-hover;
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+    background-color: @basic-blue-down;
+    text-decoration: none;
+  }
+
+  &:disabled {
+    background-color: @beige;
+    text-decoration: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 14.5px 121px 17.5px 121px;
+  }
 }
