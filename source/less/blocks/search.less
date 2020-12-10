@@ -1,7 +1,36 @@
+
+.search {
+  margin-top: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 57px;
+  }
+}
+
+.search__preamble {
+  padding: 33px 27px 41.5px 27px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 166px 51.5px 167px;
+  }
+  // outline: 5px solid rgba(0, 255, 72, 0.8);
+  // outline-offset: -5px;
+}
+
 .search__question {
+  // margin-top: 98px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .search__direction {
@@ -9,18 +38,22 @@
   line-height: 24px;
 }
 
-.search__hotel {
-  &:hover {
-    background-color: @basic-blue-hover;
-  }
+.search__map {
+  background-image: url("../../img/map-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 
-  &:focus,
-  &:active {
-    opacity: 0.3;
-    background-color: @basic-blue-down;
-  }
+  height: 350px;
 
-  &:disabled {
-    background-color: @beige;
+  margin-top: 66.5px;
+  margin-bottom: 10px;
+  // margin-left: auto;
+  // margin-right: auto;
+
+  outline: 5px solid rgba(0, 255, 64, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/map-tablet.jpg");
   }
 }
