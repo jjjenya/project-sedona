@@ -8,6 +8,9 @@
 .advantages-form__title {
   margin-bottom: 36px;
   font-weight: bold;
+  text-align: center;
+  padding-left: 26px;
+  padding-right: 26px;
 
   // outline: 5px solid rgba(0, 255, 42, 0.981);
   // outline-offset: -5px;
@@ -43,7 +46,12 @@
 }
 
 .advantages-form__item {
-  text-align: center;
+  text-align: left;
+  margin-left: 24px;
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
 
 .advantages-form__item:nth-child(1),
@@ -54,4 +62,11 @@
 
 .advantages-form__item:nth-child(4) {
   margin-bottom: 60px;
+}
+
+.advantages-form__item:nth-child(1),
+.advantages-form__item:nth-child(3) {
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }
