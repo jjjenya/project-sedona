@@ -1,5 +1,6 @@
 .recommendations__list {
   list-style: none;
+  margin-bottom: 10px;
 
 
   @media (min-width: @tablet-width) {
@@ -20,10 +21,15 @@
 }
 
 .recommendations__description {
-  color: @brown;
+  // color: @brown;
+  color: tomato;
   font-size: 14px;
   line-height: 21px;
   text-align: left;
+
+  margin: 0;
+  padding: 17px 0 0 0;
+
 
   @media (min-width: @tablet-width) {
     text-align: center;
@@ -31,6 +37,8 @@
 }
 
 .recommendations__item {
+  padding: 27px 20px 25px 29px;
+
   @media (min-width: @tablet-width) {
     width: 33.33%;
     margin-top: 148px;
@@ -46,7 +54,7 @@
 
 
 .recommendations__item--hotel {
-  padding: 35px 20px 16px 50px;
+
 
   // outline: 5px solid rgba(0, 255, 72, 0.8);
   // outline-offset: -5px;
@@ -72,7 +80,7 @@
 }
 
 .recommendations__item--souvenir {
-  padding: 10px 30px 16px 50px;
+  padding-top: 0;
 
   // outline: 5px solid rgba(0, 89, 255, 0.8);
   // outline-offset: -5px;
@@ -99,7 +107,8 @@
 }
 
 .recommendations__item--eat {
-  padding: 10px 40px 35px 50px;
+  padding-top: 1px;
+  // padding: 10px 40px 35px 50px;
 
   // outline: 5px solid rgba(255, 225, 0, 0.8);
   // outline-offset: -5px;
