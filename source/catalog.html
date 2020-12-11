@@ -17,7 +17,7 @@
       </a>
 
       <button class="page-header__toggle" type="button" aria-label="Открыть меню">
-        <img class="page-header__toggle-image" src="img/icon-menu.svg" width="22.9px" height="22px">
+        <img class="page-header__toggle-image" src="img/icon-menu.svg" width="22.9" height="22" alt="Открыть меню">
       </button>
     </div>
 
@@ -25,7 +25,8 @@
       <div class="main-nav__wrapper">
         <button class="main-nav__button-cloze" type="button" aria-label="Закрыть меню">
           <span aria-hidden="true">
-            <img class="main-nav__button-cloze-image" src="img/icon-cloze.svg" width="22.2px" height="22.2px">
+            <img class="main-nav__button-cloze-image" src="img/icon-cloze.svg" width="22.2" height="22.2"
+              alt="Закрыть меню">
           </span>
         </button>
 
@@ -60,44 +61,142 @@
 
     <h1 class="visually-hidden">Страница просмотра фото и видео</h1>
 
-    <section class="title-catalog">
-      <div class="title-catalog__wrapper-text">
-        <img class="image-text-catalog" src="#" width="229" height="39" alt="Sedona">
+    <section class="getting-intro-catalog">
+
+      <div class="getting-intro-catalog__wrapper-image">
+        <img class="getting-intro-catalog__image" src="img/text-form.svg" width="229" height="39" alt="Sedona">
       </div>
-      <div class="title-catalog__wrapper-background">
-        <img class="image-background-catalog" src="#" width="902" height="214" alt="Фотография - вид на горы">
+
+      <div class="getting-intro-catalog__wrapper-text">
+        <header class="getting-intro-catalog__text">
+          <h2 class="getting-intro-catalog__title">Фото и видео</h2>
+          <p class="getting-intro-catalog__intro">Не можете решиться на путешествие из-за курса? <br class="getting-intro-catalog__break">Фотографии помогут вам
+            забыть о политике и экономике.</p>
+        </header>
       </div>
     </section>
 
-    <section class="media-preview">
+
+    <!-- <section class="media-preview">
       <header class="media-preview__header">
         <h2 class="media-preview__title">Фото и видео</h2>
-        <p class="media-preview__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-          забыть о политике и экономике.</p>
+        <p class="media-preview__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
       </header>
-    </section>
+    </section> -->
+    <!-- </article> -->
 
-    <section class="foto">
-      <ul class="foto__list">
-        <li class="foto__item">
-          <h3 class="foto__title">Неродные просторы</h3>
-          <a class="foto__fullscreen" href="#">
-            <img class="foto__image" src="img/catalog-landscape.jpg" width="280" height="280"
-              alt="Уходящая вперед дорога, на закате, с горами на горизонте">
-          </a>
-          <div class="foto__autor autor">
-            <p class="autor__text">Автор фото:</p>
-            <p class="autor__name">Борис</p>
-          </div>
-          <p class="foto__likes">
-            <svg class="foto__icon-like" width="23" height="21">
-              <use class="foto__icon-image" xlink:href="#"></use>
+    <!-- <li class="gallery__item">
+      <figure class="gallery__foto foto">
+        <a class="foto__fullscreen" href="#">
+          <img class="foto__image" src="img/catalog-flora.jpg" width="280" height="280"
+            alt="Цветущий ветвистый кактус на фоне скал: рядом верхушка второго кактуса">
+        </a>
+        <figcaption class="foto__title">
+          Местная растительность<br>
+          <span class="foto__autor-text">Автор фото:</span>
+          <span class="foto__autor-name">Сергей</span><br>
+          <p class="foto__like icon">
+            <svg class="icon__like" width="23" height="21">
+              <use class="icon__image" xlink:href="#"></use>
             </svg>
             <span class="visually-hidden">Количество лайков:</span>
-            1350
+            143
           </p>
+        </figcaption>
+      </figure>
+    </li> -->
+
+    <section class="gallery">
+
+      <ul class="gallery__list">
+
+        <li class="gallery__item">
+          <figure class="gallery__foto foto">
+            <a class="foto__fullscreen" href="#">
+              <img class="foto__image" src="img/catalog-landscape.jpg" width="280" height="280"
+                alt="Уходящая вперед дорога, на закате, с горами на горизонте">
+            </a>
+            <figcaption class="foto__description">
+              <span class="foto__title">Неродные просторы</span><br>
+              <span class="foto__autor-text">Автор фото:</span>
+              <span class="foto__autor-name">Борис</span><br>
+              <p class="foto__like icon">
+                <svg class="icon__like" width="23" height="21">
+                  <use class="icon__image" xlink:href="#"></use>
+                </svg>
+                <span class="visually-hidden">Количество лайков:</span>
+                1350
+              </p>
+            </figcaption>
+          </figure>
         </li>
-        <li class="foto__item">
+
+        <li class="gallery__item">
+          <figure class="gallery__foto foto">
+            <a class="foto__fullscreen" href="#">
+              <img class="foto__image" src="img/catalog-flora.jpg" width="280" height="280"
+                alt="Цветущий ветвистый кактус на фоне скал: рядом верхушка второго кактуса">
+            </a>
+            <figcaption class="foto__description">
+              <span class="foto__title">Местная растительность</span><br>
+              <span class="foto__autor-text">Автор фото:</span>
+              <span class="foto__autor-name">Сергей</span><br>
+              <p class="foto__like icon">
+                <svg class="icon__like" width="23" height="21">
+                  <use class="icon__image" xlink:href="#"></use>
+                </svg>
+                <span class="visually-hidden">Количество лайков:</span>
+                143
+              </p>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="gallery__item">
+          <figure class="gallery__foto foto">
+            <a class="foto__fullscreen" href="#">
+              <img class="foto__image" src="img/catalog-road.jpg" width="280" height="280"
+                alt="Вид сверху на дорогу среди деревьев на склоне возвышенности">
+            </a>
+            <figcaption class="foto__description">
+              <span class="foto__title">Дорога на север</span><br>
+              <span class="foto__autor-text">Автор фото:</span>
+              <span class="foto__autor-name">Петр</span><br>
+              <p class="foto__like icon">
+                <svg class="icon__like" width="23" height="21">
+                  <use class="icon__image" xlink:href="#"></use>
+                </svg>
+                <span class="visually-hidden">Количество лайков:</span>
+                96
+              </p>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="gallery__item">
+          <figure class="gallery__foto foto">
+            <a class="foto__fullscreen" href="#">
+              <img class="foto__image" src="img/catalog-bridge.jpg" width="280" height="280"
+                alt="Мост сбоку с перспективой на горы">
+            </a>
+            <figcaption class="foto__description">
+              <span class="foto__title">Мост дьявола</span><br>
+              <span class="foto__autor-text">Автор фото:</span>
+              <span class="foto__autor-name">Антон</span><br>
+              <p class="foto__like icon">
+                <svg class="icon__like" width="23" height="21">
+                  <use class="icon__image" xlink:href="#"></use>
+                </svg>
+                <span class="visually-hidden">Количество лайков:</span>
+                254
+              </p>
+            </figcaption>
+          </figure>
+        </li>
+
+
+        <!-- <li class="foto__item">
           <h3 class="foto__title">Местная растительность</h3>
           <a class="foto__fullscreen" href="#">
             <img class="foto__image" src="img/catalog-flora.jpg" width="280" height="280"
@@ -114,43 +213,8 @@
             <span class="visually-hidden">Количество лайков:</span>
             143
           </p>
-        </li>
-        <li class="foto__item">
-          <h3 class="foto__title">Дорога на север</h3>
-          <a class="foto__fullscreen" href="#">
-            <img class="foto__image" src="img/catalog-road.jpg" width="280" height="280"
-              alt="Вид сверху на дорогу среди деревьев на склоне возвышенности">
-          </a>
-          <div class="foto__autor autor">
-            <p class="autor__text">Автор фото:</p>
-            <p class="autor__name">Петр</p>
-          </div>
-          <p class="foto__likes">
-            <svg class="foto__icon-like" width="23" height="21">
-              <use class="foto__icon-image" xlink:href="#"></use>
-            </svg>
-            <span class="visually-hidden">Количество лайков:</span>
-            96
-          </p>
-        </li>
-        <li class="foto__item">
-          <h3 class="foto__title">Мост дьявола</h3>
-          <a class="foto__fullscreen" href="#">
-            <img class="foto__image" src="img/catalog-bridge.jpg" width="280" height="280"
-              alt="Мост сбоку с перспективой на горы">
-          </a>
-          <div class="foto__autor autor">
-            <p class="autor__text">Автор фото:</p>
-            <p class="autor__name">Антон</p>
-          </div>
-          <p class="foto__likes">
-            <svg class="foto__icon-like" width="23" height="21">
-              <use class="foto__icon-image" xlink:href="#"></use>
-            </svg>
-            <span class="visually-hidden">Количество лайков:</span>
-            254
-          </p>
-        </li>
+        </li> -->
+
       </ul>
     </section>
 
