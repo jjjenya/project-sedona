@@ -2,6 +2,7 @@
 .search {
   margin-top: 33px;
 
+
   @media (min-width: @tablet-width) {
     margin-top: 58px;
   }
@@ -12,7 +13,7 @@
 }
 
 .search__preamble {
-  padding: 33px 27px 41.5px 27px;
+  padding: 0 27px 41.5px 27px;
 
   @media (min-width: @tablet-width) {
     padding: 0 166px 51.5px 167px;
@@ -36,6 +37,20 @@
 .search__direction {
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  padding-top: 24px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 33px;
+
+    br {
+      display: block;
+    }
+  }
 }
 
 .search__map {
@@ -55,5 +70,6 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/map-tablet.jpg");
+    margin-top: 75px;
   }
 }

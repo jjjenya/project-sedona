@@ -1,10 +1,18 @@
 .recommendations__list {
   list-style: none;
+  margin-bottom: 10px;
+
+  background-color: @white;
 
 
   @media (min-width: @tablet-width) {
     display: flex;
     padding: 0;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 64px;
   }
 }
 
@@ -21,9 +29,14 @@
 
 .recommendations__description {
   color: @brown;
+  // color: tomato;
   font-size: 14px;
   line-height: 21px;
   text-align: left;
+
+  margin: 0;
+  padding: 17px 0 0 0;
+
 
   @media (min-width: @tablet-width) {
     text-align: center;
@@ -31,9 +44,13 @@
 }
 
 .recommendations__item {
+  padding: 30px 20px 25px 29px;
+
+
   @media (min-width: @tablet-width) {
     width: 33.33%;
     margin-top: 148px;
+    // padding-bottom: 240px;
   }
 
   @media (min-width: @desktop-width) {
@@ -46,18 +63,19 @@
 
 
 .recommendations__item--hotel {
-  padding: 35px 20px 16px 50px;
+
 
   // outline: 5px solid rgba(0, 255, 72, 0.8);
   // outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
     order: 1;
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
 
     .recommendations__description {
       margin-left: 40px;
       margin-right: 40px;
+      padding-top: 21px;
     }
   }
 
@@ -72,7 +90,7 @@
 }
 
 .recommendations__item--souvenir {
-  padding: 10px 30px 16px 50px;
+  padding-top: 0;
 
   // outline: 5px solid rgba(0, 89, 255, 0.8);
   // outline-offset: -5px;
@@ -80,10 +98,12 @@
   @media (min-width: @tablet-width) {
     order: 3;
     padding: 0;
+    padding-top: 8px;
 
     .recommendations__description {
       margin-left: 30px;
       margin-right: 30px;
+      padding-top: 25px;
     }
   }
 
@@ -99,7 +119,8 @@
 }
 
 .recommendations__item--eat {
-  padding: 10px 40px 35px 50px;
+  padding-top: 1px;
+  // padding: 10px 40px 35px 50px;
 
   // outline: 5px solid rgba(255, 225, 0, 0.8);
   // outline-offset: -5px;
@@ -107,10 +128,12 @@
   @media (min-width: @tablet-width) {
     order: 2;
     padding: 0;
+    padding-top: 8px;
 
     .recommendations__description {
       margin-left: 50px;
       margin-right: 50px;
+      padding-top: 25px;
     }
   }
 
