@@ -9,31 +9,31 @@
 
 
 
-      <!-- PixelPerfect -->
+  <!-- PixelPerfect -->
 
-      <!-- <style>
-        HTML {
-          background: url('img/project/form/Mobile.jpg') 50% 0 no-repeat;
-        }
+  <style>
+    HTML {
+      background: url('img/project/form/Mobile.jpg') 50% 0 no-repeat;
+    }
 
-        @media (min-width: 768px) {
-          HTML {
-            background-image: url( 'img/project/form/Tablet.jpg' );
-          }
-        }
+    @media (min-width: 768px) {
+      HTML {
+        background-image: url('img/project/form/Tablet.jpg');
+      }
+    }
 
-        @media (min-width: 1280px) {
-          HTML {
-            background-image: url( 'img/project/form/Desktop.jpg' );
-          }
-        }
+    @media (min-width: 1280px) {
+      HTML {
+        background-image: url('img/project/form/Desktop.jpg');
+      }
+    }
 
-        BODY {
-          opacity: .5;
-        }
-      </style> -->
+    BODY {
+      opacity: .5;
+    }
+  </style>
 
-      <!-- PixelPerfect -->
+  <!-- PixelPerfect -->
 
 </head>
 
@@ -44,22 +44,32 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Седона">
       </a>
-
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню">
-        <img class="page-header__toggle-image" src="img/icon-menu.svg" width="22.9" height="22" alt="Открыть меню">
-      </button>
     </div>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
       <div class="main-nav__wrapper">
+
+
+
+
+        <!-- <button class="page-header__toggle" type="button" aria-label="Открыть меню">
+        <img class="page-header__toggle-image" src="img/icon-menu.svg" width="22.9" height="22" alt="Открыть меню">
+          </button>
+               </div>
+
+               <nav class="main-nav">
+
+          <div class="main-nav__wrapper">
 
         <button class="main-nav__button-cloze" type="button" aria-label="Закрыть меню">
           <span aria-hidden="true">
             <img class="main-nav__button-cloze-image" src="img/icon-cloze.svg" width="22.2" height="22.2"
               alt="Закрыть меню">
           </span>
-        </button>
+        </button> -->
 
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -140,7 +150,7 @@
             <ul class="contacts-review__list" role="none">
               <li class="contacts-review__item">
                 <label class="contacts-review__description" for="field-tel"><span
-                    class="contacts-review__description--hidden">Контактный </span>телефон*:</label>
+                    class="contacts-review__description--hidden">Контактный</span>&nbsp;телефон*:</label>
                 <input class="contacts-review__field" type="tel" name="tel" id="field-tel" placeholder="Введите телефон"
                   required>
               </li>
@@ -247,6 +257,25 @@
       </div>
     </div>
   </footer>
+
+
+
+  <!-- <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script> -->
 
 </body>
 

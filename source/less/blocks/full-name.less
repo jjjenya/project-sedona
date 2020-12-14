@@ -2,17 +2,23 @@
   border: none;
   text-align: center;
   margin: 0;
+  padding: 0;
   padding-left: 20px;
   padding-right: 20px;
 
+  // color: tomato;
+
   @media (min-width: @tablet-width) {
-    padding-left: 58px;
+    margin-top: 24px;
+    padding-top: 35px;
+    padding-left: 57px;
     padding-right: 60px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 79px;
     padding-right: 120px;
+    margin-top: 0;
   }
 }
 
@@ -56,7 +62,7 @@
   margin-bottom: 20px;
 
   .full-name__description {
-    width: 50px;
+    width: 64px;
   }
 
   .full-name__field {
@@ -82,10 +88,11 @@
 
 .full-name__description {
   color: @brown;
+  // color: tomato;
   font-size: 14px;
   text-transform: uppercase;
   vertical-align: middle;
-  padding-top: 19px;
+  padding-top: 20px;
   padding-bottom: 13px;
 
   // outline: 5px solid rgba(0, 255, 123, 0.981);
@@ -93,18 +100,28 @@
 }
 
 .full-name__field {
-  font-size: 18px;
+  // font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   background-color: @grey-form;
+  // background-color: pink;
   border: none;
+  margin-left: 12px;
 
   // outline: 5px solid rgba(0, 208, 255, 0.981);
   // outline-offset: -5px;
 
   padding: 18px 0 14px 22px;
 
+  @media (min-width: @tablet-width) {
+    margin-left: 15px;
+  }
+
+
   &::placeholder {
     color: @black;
+
+    // color: tomato;
   }
 
   &:hover,
