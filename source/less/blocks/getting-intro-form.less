@@ -28,13 +28,17 @@
   // }
 
   @media (min-width: @tablet-width) {
-    height: 246px;
+
+    background: url("../../img/background-foto-form-tablet.jpg") center no-repeat;
+
+    height: 290px;
   }
 
-  // @media (min-width: @desktop-width) {
-  //   background: url("../../img/background-foto-desktop.jpg") center no-repeat;
-  //   background-size: 100%;
-  // }
+  @media (min-width: @desktop-width) {
+    height: 300px;
+    //   background: url("../../img/background-foto-desktop.jpg") center no-repeat;
+    //   background-size: 100%;
+  }
 }
 
 .getting-intro-form__image {
@@ -53,7 +57,7 @@
 }
 
 .getting-intro-form__text {
-  padding: 36px 8px 37px 6px;
+  padding: 39px 0 37px 0;
 
   // outline: 5px solid rgba(0, 255, 145, 0.981);
   // outline-offset: -5px;
@@ -63,7 +67,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 114px 384px 56.5px 382px;
+    padding: 114px 380px 56.5px 380px;
   }
 }
 
@@ -76,7 +80,7 @@
 
   text-transform: uppercase;
 
-  margin-top: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -90,6 +94,7 @@
 
 .getting-intro-form__intro {
   color: @brown;
+  // color: tomato;
 
   font-size: 14px;
   line-height: 24px;
@@ -98,5 +103,15 @@
 
   text-transform: uppercase;
 
+  padding: 29px 10px 0 10px;
+
+
+  @media (min-width: @tablet-width) {
+    padding: 30px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 32px;
+  }
   // margin: 0;
 }
