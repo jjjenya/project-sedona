@@ -17,9 +17,6 @@
 .gallery__item {
   // outline: 5px solid rgba(68, 0, 255, 0.981);
   // outline-offset: -5px;
-
-  margin-bottom: 15px;
-
   @media (min-width: @tablet-width) {
     margin: 0;
   }
@@ -58,12 +55,27 @@
     .gallery__foto {
       margin: 0;
     }
+
+    .foto__image {
+      margin-top: 19px;
+    }
+
+    .foto__autor-name {
+      margin-left: -22px;
+    }
   }
 }
 
+
 .gallery__item:nth-child(2) {
+  margin-top: 38px;
+  // .foto__image {
+  //   margin-top: 20px;
+  // }
+
   @media (min-width: @tablet-width) {
     width: 50%;
+    margin: 0;
 
     .gallery__foto {
       margin-left: 60px;
@@ -71,6 +83,15 @@
 
     .foto__image {
       height: 267px;
+    }
+
+    .foto__autor-name {
+      margin-left: -25px;
+    }
+
+    .foto__like {
+      margin-top: -22px;
+      margin-right: 30px;
     }
   }
 
@@ -80,12 +101,19 @@
     .gallery__foto {
       margin: 0;
     }
+
+    .foto__autor-name {
+      margin-left: -14px;
+    }
   }
 }
 
 .gallery__item:nth-child(3) {
+  margin-top: 38px;
+
   @media (min-width: @tablet-width) {
     width: 50%;
+    margin: 0;
 
     .gallery__foto {
       margin-right: 60px;
@@ -98,6 +126,15 @@
     .foto__description {
       background-color: @grey-catalog;
     }
+
+    .foto__autor-name {
+      margin-left: -21px;
+    }
+
+    .foto__like {
+      margin-top: -22px;
+      margin-right: 36px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -106,12 +143,19 @@
     .gallery__foto {
       margin: 0;
     }
+
+    .foto__autor-name {
+      margin-left: -12px;
+    }
   }
 }
 
 .gallery__item:nth-child(4) {
+  margin-top: 38px;
+
   @media (min-width: @tablet-width) {
     width: 50%;
+    margin: 0;
 
     .gallery__foto {
       margin-left: 60px;
@@ -120,6 +164,15 @@
     .foto__image {
       height: 267px;
     }
+
+    .foto__autor-name {
+      margin-left: -25px;
+    }
+
+    .foto__like {
+      margin-top: -22px;
+      margin-right: 29px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -127,6 +180,10 @@
 
     .gallery__foto {
       margin: 0;
+    }
+
+    .foto__autor-name {
+      margin-left: -12px;
     }
   }
 }
@@ -145,6 +202,7 @@
 
 .foto__image {
   width: 100%;
+  display: block;
 }
 
 .foto__description {
@@ -159,10 +217,8 @@
   // outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 22px;
-    padding-bottom: 15px;
-
     background-color: @grey-form;
+
     // background-color: pink;
 
     display: grid;
@@ -171,11 +227,14 @@
 
     margin-top: 0;
     height: 80px;
+
+
+    padding-left: 20px;
   }
 
   @media (min-width: @desktop-width) {
     background: rgba(0, 0, 0, 0.3);
-    margin-top: -120px;
+    margin-top: -82px;
     color: @white;
 
     grid-template-columns: repeat(12, 1fr);
@@ -189,18 +248,22 @@
   // outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 17px;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 5;
-    padding-left: 20px;
-
+    // padding-left: 20px;
 
     // &::after {
     //   content: "";
     //   // flex-basis: 50%;
     //   width: 50%;
     // }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 209px;
   }
 }
 
@@ -209,12 +272,12 @@
   text-transform: none;
   // font-weight: normal;
   color: @brown;
+  padding-top: 2px;
 
   @media (min-width: @desktop-width) {
     color: @white;
   }
 }
-
 
 .foto__autor-text {
   // outline: 5px solid rgba(1, 26, 1, 0.981);
@@ -225,7 +288,8 @@
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 3;
-    padding-left: 20px;
+    // padding-left: 20px;
+
 
     // order: 3;
     // padding-left: 20px;
@@ -246,6 +310,7 @@
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 4;
+    margin-left: -29px;
     // width: 35%;
     // order: 4;
   }
@@ -262,7 +327,8 @@
   line-height: 24px;
 
   margin: 0;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
 
   // outline: 5px solid rgba(4, 0, 255, 0.981);
   // outline-offset: -5px;
@@ -271,12 +337,12 @@
     margin: 0;
     // order: 2;
     // width: 50%;
-    margin-right: 10px;
+    margin-right: 20px;
 
     text-align: right;
 
     align-self: center;
-    // margin-top: 30px;
+
 
     grid-row-start: 1;
     grid-row-end: 3;
