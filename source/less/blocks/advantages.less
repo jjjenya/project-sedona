@@ -19,6 +19,7 @@
 }
 
 .advantages__wrapper-1 {
+  position: relative;
 
   // outline: 3px solid rgba(21, 255, 0, 0.892);
   // outline-offset: -3px;
@@ -94,15 +95,21 @@
       }
     }
   }
-  // ::after {
-  //   content: "";
-  //   left: 0;
-  //   bottom: 0;
-  //   width: 100%;
-  //   height: 260px;
-  //   background: url('../../img/index-city.jpg') center no-repeat;
-  //   background-size: 100%;
-  // }
+}
+
+.advantages__wrapper-1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 37px;
+  background: url("../../img/white-triangle-mobile.svg") center no-repeat;
+  background-size: 100% 37px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 // .advantages__wrapper-1::after {
