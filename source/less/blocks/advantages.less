@@ -19,9 +19,10 @@
 }
 
 .advantages__wrapper-1 {
+  position: relative;
 
-  outline: 3px solid rgba(21, 255, 0, 0.892);
-  outline-offset: -3px;
+  // outline: 3px solid rgba(21, 255, 0, 0.892);
+  // outline-offset: -3px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -94,15 +95,21 @@
       }
     }
   }
-  // ::after {
-  //   content: "";
-  //   left: 0;
-  //   bottom: 0;
-  //   width: 100%;
-  //   height: 260px;
-  //   background: url('../../img/index-city.jpg') center no-repeat;
-  //   background-size: 100%;
-  // }
+}
+
+.advantages__wrapper-1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 37px;
+  background: url("../../img/white-triangle-mobile.svg") center no-repeat;
+  background-size: 100% 37px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 // .advantages__wrapper-1::after {
@@ -127,8 +134,8 @@
 
   height: auto;
 
-  outline: 3px solid rgba(21, 255, 0, 0.892);
-  outline-offset: -3px;
+  // outline: 3px solid rgba(21, 255, 0, 0.892);
+  // outline-offset: -3px;
 
 
   @media (min-width: @tablet-width) {
@@ -219,8 +226,8 @@
   height: 260px;
   width: 100%;
 
-  outline: 3px solid rgba(0, 174, 255, 0.892);
-  outline-offset: -3px;
+  // outline: 3px solid rgba(0, 174, 255, 0.892);
+  // outline-offset: -3px;
 
   // @media (min-width: @tablet-width) {
   //   grid-column-start: 1;
@@ -236,8 +243,8 @@
   padding-top: 25px;
   padding-bottom: 24px;
 
-  // background-color: @grey-light;
-  background-color: pink;
+  background-color: @grey-light;
+  // background-color: pink;
   // outline: 5px solid rgba(0, 174, 255, 0.892);
   // outline-offset: -5px;
 

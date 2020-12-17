@@ -16,23 +16,12 @@
   outline: 5px solid rgba(68, 0, 255, 0.981);
   outline-offset: -5px;
 
-  background: url("../../img/background-foto-tablet.jpg") center no-repeat;
-  background-size: 389px 100%;
+  background: url("../../img/back-mobile.jpg") center no-repeat;
+  // background-size: 389px 100%;
+  background-size: 100%;
 
   z-index: -1;
   height: 389px;
-
-  // ::before {
-  //   content: "";
-  //   position: absolute;
-  //   z-index: 18;
-  //   left: 0;
-  //   bottom: 0;
-  //   width: 100%;
-  //   height: 57px;
-  //   background: url("../../img/triangle.svg") center no-repeat;
-  //   background-size: 100%;
-  // }
 
   // @media (min-width: 321px) {
 
@@ -54,19 +43,53 @@
 
   @media (min-width: @tablet-width) {
     height: 518px;
-    background: url("../../img/background-foto-tablet.jpg") center no-repeat;
+    background: url("../../img/back-tablet.jpg") center no-repeat;
     background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.jpg");
+      // background-size: 100%;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../../img/background-foto-desktop.jpg") center no-repeat;
+    background: url("../../img/back-desktop.jpg") center no-repeat;
     background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.jpg");
+      // background-size: 100%;
+    }
   }
+}
+
+.getting-intro__wrapper-image::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 57px;
+  background: url("../../img/intro-triangle-mobile.svg") center no-repeat;
+  background-size: 100% 57px;
+
+  // @media (min-width: @tablet-width) {
+  //   background: url("../../img/intro-triangle-tablet") center no-repeat;
+  //   background-size: 100%;
+  // }
+
+  // @media (min-width: @desktop-width) {
+  //   background: url("../../img/intro-triangle-desktop") center no-repeat;
+  //   background-size: 100%;
+  // }
 }
 
 .getting-intro__image {
   // outline: 5px solid rgba(0, 255, 145, 0.981);
   // outline-offset: -5px;
+
+  width: auto;
+  height: 214px;
 
   top: 90px;
   position: relative;
