@@ -106,7 +106,11 @@
     <section class="getting-intro-form">
 
       <div class="getting-intro-form__wrapper-image">
-        <img class="getting-intro-form__image" src="img/text-form.svg" width="229" height="39" alt="Sedona">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/text-form-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/text-form-tablet.svg">
+          <img class="getting-intro-form__image" src="img/text-form-mobile.svg" width="229" height="39" alt="Sedona">
+        </picture>
       </div>
 
       <div class="getting-intro-form__wrapper-text">
