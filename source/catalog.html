@@ -9,9 +9,9 @@
 
 
 
-      <!-- PixelPerfect -->
+  <!-- PixelPerfect -->
 
-      <!-- <style>
+  <!-- <style>
         HTML {
           background: url('img/project/catalog/Mobile.jpg') 50% 0 no-repeat;
         }
@@ -33,7 +33,7 @@
         }
       </style> -->
 
-      <!-- PixelPerfect -->
+  <!-- PixelPerfect -->
 
 
 </head>
@@ -43,7 +43,11 @@
 
     <div class="page-header__line">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Седона">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Седона">
+        </picture>
       </a>
     </div>
 
@@ -55,7 +59,7 @@
 
       <div class="main-nav__wrapper">
 
-      <!-- <button class="page-header__toggle" type="button" aria-label="Открыть меню">
+        <!-- <button class="page-header__toggle" type="button" aria-label="Открыть меню">
         <img class="page-header__toggle-image" src="img/icon-menu.svg" width="22.9" height="22" alt="Открыть меню">
       </button>
     </div>
@@ -100,16 +104,21 @@
 
     <h1 class="visually-hidden">Страница просмотра фото и видео</h1>
 
-    <section class="getting-intro-catalog">
+    <section class="getting-intro-catalog getting-intro-image">
 
-      <div class="getting-intro-catalog__wrapper-image">
-        <img class="getting-intro-catalog__image" src="img/text-form.svg" width="229" height="39" alt="Sedona">
+      <div class="getting-intro-image__wrapper">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/text-form-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/text-form-tablet.svg">
+          <img class="getting-intro-image__text" src="img/text-form-mobile.svg" width="229" height="39" alt="Sedona">
+        </picture>
       </div>
 
       <div class="getting-intro-catalog__wrapper-text">
         <header class="getting-intro-catalog__text">
           <h2 class="getting-intro-catalog__title">Фото и видео</h2>
-          <p class="getting-intro-catalog__intro">Не можете решиться на путешествие из-за курса? <br class="getting-intro-catalog__break">Фотографии помогут вам
+          <p class="getting-intro-catalog__intro">Не можете решиться на путешествие из-за курса? <br
+              class="getting-intro-catalog__break">Фотографии помогут вам
             забыть о политике и экономике.</p>
         </header>
       </div>
@@ -317,7 +326,7 @@
     </div>
   </footer>
 
-    <!-- <script>
+  <!-- <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
 
