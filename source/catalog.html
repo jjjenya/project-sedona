@@ -11,7 +11,7 @@
 
   <!-- PixelPerfect -->
 
-  <!-- <style>
+  <style>
         HTML {
           background: url('img/project/catalog/Mobile.jpg') 50% 0 no-repeat;
         }
@@ -31,7 +31,7 @@
         BODY {
           opacity: .5;
         }
-      </style> -->
+      </style>
 
   <!-- PixelPerfect -->
 
@@ -162,8 +162,15 @@
         <li class="gallery__item">
           <figure class="gallery__foto foto">
             <a class="foto__fullscreen" href="#">
-              <img class="foto__image" src="img/catalog-landscape.jpg" width="280" height="280"
-                alt="Уходящая вперед дорога, на закате, с горами на горизонте">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/photo-catalog-landscape-desktop.jpg 1x, img/photo-catalog-landscape-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-landscape-tablet.jpg 1x, img/photo-catalog-landscape-tablet@2x.jpg 2x">
+                <img class="foto__image" src="img/photo-catalog-landscape-mobile.jpg"
+                  srcset="img/photo-catalog-landscape-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Уходящая вперед дорога, на закате, с горами на горизонте">
+              </picture>
             </a>
             <figcaption class="foto__description">
               <span class="foto__title">Неродные просторы</span><br>
@@ -183,8 +190,15 @@
         <li class="gallery__item">
           <figure class="gallery__foto foto">
             <a class="foto__fullscreen" href="#">
-              <img class="foto__image" src="img/catalog-flora.jpg" width="280" height="280"
-                alt="Цветущий ветвистый кактус на фоне скал: рядом верхушка второго кактуса">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/photo-catalog-flora-desktop.jpg 1x, img/photo-catalog-flora-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-flora-tablet.jpg 1x, img/photo-catalog-flora-tablet@2x.jpg 2x">
+                <img class="foto__image" src="img/photo-catalog-flora-mobile.jpg"
+                  srcset="img/photo-catalog-flora-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Цветущий ветвистый кактус на фоне скал: рядом верхушка второго кактуса">
+              </picture>
             </a>
             <figcaption class="foto__description">
               <span class="foto__title">Местная растительность</span><br>
@@ -204,8 +218,15 @@
         <li class="gallery__item">
           <figure class="gallery__foto foto">
             <a class="foto__fullscreen" href="#">
-              <img class="foto__image" src="img/catalog-road.jpg" width="280" height="280"
-                alt="Вид сверху на дорогу среди деревьев на склоне возвышенности">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/photo-catalog-road-desktop.jpg 1x, img/photo-catalog-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-road-tablet.jpg 1x, img/photo-catalog-road-tablet@2x.jpg 2x">
+                <img class="foto__image" src="img/photo-catalog-road-mobile.jpg"
+                  srcset="img/photo-catalog-road-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Вид сверху на дорогу среди деревьев на склоне возвышенности">
+              </picture>
             </a>
             <figcaption class="foto__description">
               <span class="foto__title">Дорога на север</span><br>
@@ -225,8 +246,15 @@
         <li class="gallery__item">
           <figure class="gallery__foto foto">
             <a class="foto__fullscreen" href="#">
-              <img class="foto__image" src="img/catalog-bridge.jpg" width="280" height="280"
-                alt="Мост сбоку с перспективой на горы">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/photo-catalog-bridge-desktop.jpg 1x, img/photo-catalog-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-bridge-tablet.jpg 1x, img/photo-catalog-bridge-tablet@2x.jpg 2x">
+                <img class="foto__image" src="img/photo-catalog-bridge-mobile.jpg"
+                  srcset="img/photo-catalog-bridge-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Мост сбоку с перспективой на горы">
+              </picture>
             </a>
             <figcaption class="foto__description">
               <span class="foto__title">Мост дьявола</span><br>
@@ -278,8 +306,15 @@
       </div>
 
       <div class="video-image">
-        <img class="video-image__poster" src="img/catalog-video.jpg" width="320" height="201"
-          alt="Дорога с машинами среди гор">
+        <picture>
+          <source media="(min-width: 1280px)"
+            srcset="img/photo-catalog-video-desktop.jpg 1x, img/photo-catalog-video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/photo-catalog-video-tablet.jpg 1x, img/photo-catalog-video-tablet@2x.jpg 2x">
+          <img class="video-image__poster" src="img/photo-catalog-video-mobile.jpg"
+            srcset="img/photo-catalog-video-mobile@2x.jpg 2x" width="320" height="201"
+            alt="Дорога с машинами среди гор">
+        </picture>
         <img class="video-image__controls" src="#" width="280" height="45" alt="Панель прокрутки видео">
       </div>
 
