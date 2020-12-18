@@ -1,8 +1,6 @@
 .getting-intro {
   position: relative;
-  margin-bottom: 27px;
-
-
+  // margin-bottom: 27px;
   // outline: 5px solid rgba(255, 81, 0, 0.981);
   // outline-offset: -5px;
   // height: 389px;
@@ -13,8 +11,8 @@
 
 .getting-intro__wrapper-image {
   position: relative;
-  outline: 5px solid rgba(68, 0, 255, 0.981);
-  outline-offset: -5px;
+  // outline: 5px solid rgba(68, 0, 255, 0.981);
+  // outline-offset: -5px;
 
   background: url("../../img/back-mobile.jpg") center no-repeat;
   // background-size: 389px 100%;
@@ -22,6 +20,11 @@
 
   z-index: -1;
   height: 389px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-mobile@2x.jpg");
+    // background-size: 100%;
+  }
 
   // @media (min-width: 321px) {
 
@@ -103,7 +106,7 @@
 }
 
 .getting-intro__text {
-  padding: 34px 18px 0 17px;
+  padding: 34px 18px 10px 17px;
   background-color: @white;
 
   // outline: 5px solid rgba(0, 255, 145, 0.981);
