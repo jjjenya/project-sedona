@@ -9,9 +9,9 @@
 
 
 
-      <!-- PixelPerfect -->
+  <!-- PixelPerfect -->
 
-      <!-- <style>
+  <!-- <style>
         HTML {
           background: url('img/project/catalog/Mobile.jpg') 50% 0 no-repeat;
         }
@@ -33,7 +33,7 @@
         }
       </style> -->
 
-      <!-- PixelPerfect -->
+  <!-- PixelPerfect -->
 
 
 </head>
@@ -43,7 +43,11 @@
 
     <div class="page-header__line">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Седона">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Седона">
+        </picture>
       </a>
     </div>
 
@@ -55,7 +59,7 @@
 
       <div class="main-nav__wrapper">
 
-      <!-- <button class="page-header__toggle" type="button" aria-label="Открыть меню">
+        <!-- <button class="page-header__toggle" type="button" aria-label="Открыть меню">
         <img class="page-header__toggle-image" src="img/icon-menu.svg" width="22.9" height="22" alt="Открыть меню">
       </button>
     </div>
@@ -100,51 +104,25 @@
 
     <h1 class="visually-hidden">Страница просмотра фото и видео</h1>
 
-    <section class="getting-intro-catalog">
+    <section class="getting-intro-catalog getting-intro-image">
 
-      <div class="getting-intro-catalog__wrapper-image">
-        <img class="getting-intro-catalog__image" src="img/text-form.svg" width="229" height="39" alt="Sedona">
+      <div class="getting-intro-image__wrapper">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/text-form-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/text-form-tablet.svg">
+          <img class="getting-intro-image__text" src="img/text-form-mobile.svg" width="229" height="39" alt="Sedona">
+        </picture>
       </div>
 
       <div class="getting-intro-catalog__wrapper-text">
         <header class="getting-intro-catalog__text">
           <h2 class="getting-intro-catalog__title">Фото и видео</h2>
-          <p class="getting-intro-catalog__intro">Не можете решиться на путешествие из-за курса? <br class="getting-intro-catalog__break">Фотографии помогут вам
+          <p class="getting-intro-catalog__intro">Не можете решиться на путешествие из-за курса? <br
+              class="getting-intro-catalog__break">Фотографии помогут вам
             забыть о политике и экономике.</p>
         </header>
       </div>
     </section>
-
-
-    <!-- <section class="media-preview">
-      <header class="media-preview__header">
-        <h2 class="media-preview__title">Фото и видео</h2>
-        <p class="media-preview__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-          политике и экономике.</p>
-      </header>
-    </section> -->
-    <!-- </article> -->
-
-    <!-- <li class="gallery__item">
-      <figure class="gallery__foto foto">
-        <a class="foto__fullscreen" href="#">
-          <img class="foto__image" src="img/catalog-flora.jpg" width="280" height="280"
-            alt="Цветущий ветвистый кактус на фоне скал: рядом верхушка второго кактуса">
-        </a>
-        <figcaption class="foto__title">
-          Местная растительность<br>
-          <span class="foto__autor-text">Автор фото:</span>
-          <span class="foto__autor-name">Сергей</span><br>
-          <p class="foto__like icon">
-            <svg class="icon__like" width="23" height="21">
-              <use class="icon__image" xlink:href="#"></use>
-            </svg>
-            <span class="visually-hidden">Количество лайков:</span>
-            143
-          </p>
-        </figcaption>
-      </figure>
-    </li> -->
 
     <section class="gallery">
 
@@ -153,8 +131,15 @@
         <li class="gallery__item">
           <figure class="gallery__foto foto">
             <a class="foto__fullscreen" href="#">
-              <img class="foto__image" src="img/catalog-landscape.jpg" width="280" height="280"
-                alt="Уходящая вперед дорога, на закате, с горами на горизонте">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/photo-catalog-landscape-desktop.jpg 1x, img/photo-catalog-landscape-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-landscape-tablet.jpg 1x, img/photo-catalog-landscape-tablet@2x.jpg 2x">
+                <img class="foto__image" src="img/photo-catalog-landscape-mobile.jpg"
+                  srcset="img/photo-catalog-landscape-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Уходящая вперед дорога, на закате, с горами на горизонте">
+              </picture>
             </a>
             <figcaption class="foto__description">
               <span class="foto__title">Неродные просторы</span><br>
@@ -174,8 +159,15 @@
         <li class="gallery__item">
           <figure class="gallery__foto foto">
             <a class="foto__fullscreen" href="#">
-              <img class="foto__image" src="img/catalog-flora.jpg" width="280" height="280"
-                alt="Цветущий ветвистый кактус на фоне скал: рядом верхушка второго кактуса">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/photo-catalog-flora-desktop.jpg 1x, img/photo-catalog-flora-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-flora-tablet.jpg 1x, img/photo-catalog-flora-tablet@2x.jpg 2x">
+                <img class="foto__image" src="img/photo-catalog-flora-mobile.jpg"
+                  srcset="img/photo-catalog-flora-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Цветущий ветвистый кактус на фоне скал: рядом верхушка второго кактуса">
+              </picture>
             </a>
             <figcaption class="foto__description">
               <span class="foto__title">Местная растительность</span><br>
@@ -195,8 +187,15 @@
         <li class="gallery__item">
           <figure class="gallery__foto foto">
             <a class="foto__fullscreen" href="#">
-              <img class="foto__image" src="img/catalog-road.jpg" width="280" height="280"
-                alt="Вид сверху на дорогу среди деревьев на склоне возвышенности">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/photo-catalog-road-desktop.jpg 1x, img/photo-catalog-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-road-tablet.jpg 1x, img/photo-catalog-road-tablet@2x.jpg 2x">
+                <img class="foto__image" src="img/photo-catalog-road-mobile.jpg"
+                  srcset="img/photo-catalog-road-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Вид сверху на дорогу среди деревьев на склоне возвышенности">
+              </picture>
             </a>
             <figcaption class="foto__description">
               <span class="foto__title">Дорога на север</span><br>
@@ -216,8 +215,15 @@
         <li class="gallery__item">
           <figure class="gallery__foto foto">
             <a class="foto__fullscreen" href="#">
-              <img class="foto__image" src="img/catalog-bridge.jpg" width="280" height="280"
-                alt="Мост сбоку с перспективой на горы">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/photo-catalog-bridge-desktop.jpg 1x, img/photo-catalog-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-catalog-bridge-tablet.jpg 1x, img/photo-catalog-bridge-tablet@2x.jpg 2x">
+                <img class="foto__image" src="img/photo-catalog-bridge-mobile.jpg"
+                  srcset="img/photo-catalog-bridge-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Мост сбоку с перспективой на горы">
+              </picture>
             </a>
             <figcaption class="foto__description">
               <span class="foto__title">Мост дьявола</span><br>
@@ -234,26 +240,6 @@
           </figure>
         </li>
 
-
-        <!-- <li class="foto__item">
-          <h3 class="foto__title">Местная растительность</h3>
-          <a class="foto__fullscreen" href="#">
-            <img class="foto__image" src="img/catalog-flora.jpg" width="280" height="280"
-              alt="Цветущий ветвистый кактус на фоне скал: рядом верхушка второго кактуса">
-          </a>
-          <div class="foto__autor autor">
-            <p class="autor__text">Автор фото:</p>
-            <p class="autor__name">Сергей</p>
-          </div>
-          <p class="foto__likes">
-            <svg class="foto__icon-like" width="23" height="21">
-              <use class="foto__icon-image" xlink:href="#"></use>
-            </svg>
-            <span class="visually-hidden">Количество лайков:</span>
-            143
-          </p>
-        </li> -->
-
       </ul>
     </section>
 
@@ -269,8 +255,15 @@
       </div>
 
       <div class="video-image">
-        <img class="video-image__poster" src="img/catalog-video.jpg" width="320" height="201"
-          alt="Дорога с машинами среди гор">
+        <picture>
+          <source media="(min-width: 1280px)"
+            srcset="img/photo-catalog-video-desktop.jpg 1x, img/photo-catalog-video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/photo-catalog-video-tablet.jpg 1x, img/photo-catalog-video-tablet@2x.jpg 2x">
+          <img class="video-image__poster" src="img/photo-catalog-video-mobile.jpg"
+            srcset="img/photo-catalog-video-mobile@2x.jpg 2x" width="320" height="201"
+            alt="Дорога с машинами среди гор">
+        </picture>
         <img class="video-image__controls" src="#" width="280" height="45" alt="Панель прокрутки видео">
       </div>
 
@@ -317,7 +310,7 @@
     </div>
   </footer>
 
-    <!-- <script>
+  <!-- <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
 
