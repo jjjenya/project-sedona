@@ -38,6 +38,43 @@
 </head>
 
 <body class="page__body">
+
+  <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+
+
+
+
+    <symbol viewBox="0 0 46 48" id="icon-twitter">
+      <path
+        d="M11.3.167c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4z"
+        fill="white" stroke="none" transform="translate(15, 15)" />
+    </symbol>
+
+    <symbol viewBox="0 0 47 48" id="icon-facebook">
+      <path d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7z" fill="white"
+        stroke="none" transform="translate(20, 15)" />
+    </symbol>
+
+    <symbol viewBox="0 0 46 48" id="icon-youtube">
+      <path
+        d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6 0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0zM7 10.4V3.6L13.8 7 7 10.4z"
+        fill="white" stroke="none" transform="translate(15, 15)" />
+    </symbol>
+
+
+    <symbol viewBox="0 0 27 35" id="icon-copyright">
+      <path
+        d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" />
+    </symbol>
+
+  </svg>
+
+
+
+
+
+
+
   <header class="page-header">
 
     <div class="page-header__line">
@@ -200,20 +237,63 @@
             <legend class="advantages-form__title">Посещенные достопримечательности:</legend>
             <ul class="advantages-form__list" role="none">
               <li class="advantages-form__item">
-                <input class="advantages-form__field" type="checkbox" name="result" id="field-result-bridge" checked>
-                <label class="advantages-form__description" for="field-result-bridge">Мост Дьявола</label>
+                <!-- <svg  class="icon-checkbox" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
+                    fill="#333333" />
+                </svg> -->
+
+                <label class="advantages-form__description">
+                  <input class="advantages-form__field" type="checkbox" name="result" checked>
+                  <span class="advantages-form__checkbox"></span>
+                  Мост Дьявола
+                </label>
               </li>
               <li class="advantages-form__item">
-                <input class="advantages-form__field" type="checkbox" name="result" id="field-result-hill" checked>
-                <label class="advantages-form__description" for="field-result-hill">Гора-Колокол</label>
+
+                <!-- <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2.5" y="2.5" width="51" height="51" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5"
+                    stroke-linejoin="round" />
+                </svg> -->
+                <label class="advantages-form__description">
+                  <input class="advantages-form__field" type="checkbox" name="result" checked>
+                  <span class="advantages-form__checkbox"></span>
+                  Гора-Колокол
+                </label>
               </li>
               <li class="advantages-form__item">
-                <input class="advantages-form__field" type="checkbox" name="result" id="field-result-park" checked>
+                <!-- <span class="advantages-form__checkbox"></span> -->
+                <!-- <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2.5" y="2.5" width="51" height="51" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5"
+                    stroke-linejoin="round" />
+                </svg> -->
+                <!-- <input class="advantages-form__field" type="checkbox" name="result" id="field-result-park" checked>
                 <label class="advantages-form__description" for="field-result-park">Слайд-парк</label>
+                <span class="advantages-form__checkbox"></span> -->
+
+
+                <label class="advantages-form__description">
+                  <input class="advantages-form__field" type="checkbox" name="result" checked>
+                  <span class="advantages-form__checkbox"></span>
+                  Слайд-парк
+                </label>
               </li>
-              <li class="advantages-form__item">
+              <!-- <li class="advantages-form__item">
+                <span class="advantages-form__checkbox"></span>
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2.5" y="2.5" width="51" height="51" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5"
+                    stroke-linejoin="round" />
+                </svg>
                 <input class="advantages-form__field" type="checkbox" name="result" id="field-result-cliff">
                 <label class="advantages-form__description" for="field-result-cliff">Красные скалы</label>
+                <span class="advantages-form__checkbox"></span>
+              </li> -->
+
+              <li class="advantages-form__item">
+                <label class="advantages-form__description">
+                  <input class="advantages-form__field" type="checkbox" name="result">
+                  <span class="advantages-form__checkbox"></span>
+                  Красные скалы</label>
               </li>
             </ul>
           </fieldset>
@@ -247,21 +327,35 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" aria-label="Twitter">Twitter</a>
+            <a class="social__link social__link--twitter" href="#" aria-label="Twitter">
+              <svg class="social__icon" width="46" height="48">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#" aria-label="Facebook">Facebook</a>
+            <a class="social__link social__link--facebook" href="#" aria-label="Facebook">
+              <svg class="social__icon" width="47" height="48">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#" aria-label="Youtube">Youtube</a>
+            <a class="social__link social__link--youtube" href="#" aria-label="Youtube">
+              <svg class="social__icon" width="46" height="48">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">
-          Разработано
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <svg class="copyright__icon" width="27" height="35">
+            <use xlink:href="#icon-copyright"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
