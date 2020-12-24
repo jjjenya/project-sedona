@@ -41,7 +41,17 @@
 
   <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
 
+    <symbol viewBox="0 0 58 58" id="icon-tel">
+      <path
+        d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
+        fill="#010101" stroke="none" transform="translate(20, 20)" />
+    </symbol>
 
+    <symbol viewBox="0 0 58 58" id="icon-mail">
+      <path
+        d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
+        fill="black" stroke="none" transform="translate(20, 20)" />
+    </symbol>
 
 
     <symbol viewBox="0 0 46 48" id="icon-twitter">
@@ -68,10 +78,6 @@
     </symbol>
 
   </svg>
-
-
-
-
 
 
 
@@ -195,14 +201,22 @@
             <ul class="contacts-review__list" role="none">
               <li class="contacts-review__item">
                 <label class="contacts-review__description" for="field-tel"><span
-                    class="contacts-review__description--hidden">Контактный</span>&nbsp;телефон*:</label>
-                <input class="contacts-review__field" type="tel" name="tel" id="field-tel" placeholder="Введите телефон"
-                  required>
+                    class="contacts-review__description--hidden">Контактный</span>&nbsp;телефон*:
+                  <input class="contacts-review__field" type="tel" name="tel" id="field-tel"
+                    placeholder="Введите телефон" required>
+                  <svg class="contacts-review__icon" width="58" height="58">
+                    <use xlink:href="#icon-tel"></use>
+                  </svg>
+                </label>
               </li>
               <li class="contacts-review__item">
-                <label class="contacts-review__description" for="e-mail">Электронная почта*:</label>
-                <input class="contacts-review__field" type="email" name="e-mail" id="e-mail"
-                  placeholder="Введите е-mail" required>
+                <label class="contacts-review__description" for="e-mail">Электронная почта*:
+                  <input class="contacts-review__field" type="email" name="e-mail" id="e-mail"
+                    placeholder="Введите e-mail" required>
+                  <svg class="contacts-review__icon" width="58" height="58">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -214,18 +228,23 @@
             <ul class="impression__list" role="none">
               <li class="impression__item">
                 <label class="impression__description">
-                  <input class="impression__field" type="radio" name="result" value="positive" checked>Скорее
-                  положительное
+                  <input class="impression__field" type="radio" name="result" value="positive" checked>
+                  <span class="impression__radio"></span>
+                  Скорее положительное
                 </label>
               </li>
               <li class="impression__item">
                 <label class="impression__description">
-                  <input class="impression__field" type="radio" name="result" value="negative">Скорее отрицательное
+                  <input class="impression__field" type="radio" name="result" value="negative">
+                  <span class="impression__radio"></span>
+                  Скорее отрицательное
                 </label>
               </li>
               <li class="impression__item">
                 <label class="impression__description">
-                  <input class="impression__field" type="radio" name="result" value="neutral">Затрудняюсь ответить
+                  <input class="impression__field" type="radio" name="result" value="neutral">
+                  <span class="impression__radio"></span>
+                  Затрудняюсь ответить
                 </label>
               </li>
             </ul>
@@ -262,16 +281,9 @@
                 </label>
               </li>
               <li class="advantages-form__item">
-                <!-- <span class="advantages-form__checkbox"></span> -->
-                <!-- <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2.5" y="2.5" width="51" height="51" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5"
-                    stroke-linejoin="round" />
-                </svg> -->
                 <!-- <input class="advantages-form__field" type="checkbox" name="result" id="field-result-park" checked>
                 <label class="advantages-form__description" for="field-result-park">Слайд-парк</label>
                 <span class="advantages-form__checkbox"></span> -->
-
-
                 <label class="advantages-form__description">
                   <input class="advantages-form__field" type="checkbox" name="result" checked>
                   <span class="advantages-form__checkbox"></span>
@@ -279,11 +291,6 @@
                 </label>
               </li>
               <!-- <li class="advantages-form__item">
-                <span class="advantages-form__checkbox"></span>
-                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2.5" y="2.5" width="51" height="51" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5"
-                    stroke-linejoin="round" />
-                </svg>
                 <input class="advantages-form__field" type="checkbox" name="result" id="field-result-cliff">
                 <label class="advantages-form__description" for="field-result-cliff">Красные скалы</label>
                 <span class="advantages-form__checkbox"></span>
