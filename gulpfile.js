@@ -41,17 +41,17 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
-// Scripts
+// // Scripts
 
-const scripts = () => {
-  return gulp.src("source/js/script.js")
-    .pipe(uglify())
-    .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("build/js"))
-    .pipe(sync.stream());
-}
+// const scripts = () => {
+//   return gulp.src("source/js/script.js")
+//     .pipe(uglify())
+//     .pipe(rename("script.min.js"))
+//     .pipe(gulp.dest("build/js"))
+//     .pipe(sync.stream());
+// }
 
-exports.scripts = scripts;
+// exports.scripts = scripts;
 
 // Images
 
@@ -77,16 +77,16 @@ const createWebp = () => {
 
 exports.createWebp = createWebp;
 
-// Sprite
+// // Sprite
 
-const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
-    .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
-}
+// const sprite = () => {
+//   return gulp.src("source/img/icons/*.svg")
+//     .pipe(svgstore())
+//     .pipe(rename("sprite.svg"))
+//     .pipe(gulp.dest("build/img"));
+// }
 
-exports.sprite = sprite;
+// exports.sprite = sprite;
 
 // Copy
 
@@ -148,8 +148,6 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
-    sprite,
     copy,
     images,
     createWebp
@@ -164,8 +162,6 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
-    sprite,
     copy,
     createWebp
   ),
