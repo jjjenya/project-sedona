@@ -31,6 +31,10 @@
     flex-direction: column;
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .gallery__item:nth-child(1) {
@@ -102,6 +106,10 @@
     .foto__like {
       padding-top: 0;
       grid-column-end: -3;
+    }
+
+    .foto__description {
+      margin-top: -80px;
     }
   }
 }
@@ -206,6 +214,10 @@
 .foto__image {
   width: 100%;
   display: block;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .foto__description {
@@ -233,10 +245,17 @@
 
   @media (min-width: @desktop-width) {
     background: rgba(0, 0, 0, 0.3);
-    margin-top: -80px;
+
     color: @white;
 
     grid-template-columns: repeat(24, 1fr);
+
+    width: calc(100% - 20px);
+    margin-top: 0;
+    position: absolute;
+    padding-bottom: 10px;
+    height: auto;
+    bottom: 0;
   }
 }
 
