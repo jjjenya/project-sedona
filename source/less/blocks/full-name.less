@@ -78,6 +78,17 @@
 
   .full-name__description {
     width: 88px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 20px;
+    }
+  }
+
+  .full-name__field {
+    @media (min-width: @tablet-width) {
+      padding-top: 23px;
+      padding-left: 22px;
+    }
   }
 }
 
@@ -86,6 +97,17 @@
 
   .full-name__description {
     width: 86px;
+    padding-top: 20px;
+  }
+
+  .full-name__field {
+    margin-left: 15px;
+    padding-left: 21px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 22px;
+      padding-left: 22px;
+    }
   }
 }
 
@@ -95,7 +117,7 @@
   font-size: 14px;
   text-transform: uppercase;
   vertical-align: middle;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 13px;
 }
 
@@ -106,7 +128,7 @@
   border: none;
   margin-left: 12px;
 
-  padding: 19px 0 14px 23px;
+  padding: 20px 0 14px 24px;
 
   @media (min-width: @tablet-width) {
     margin-left: 15px;

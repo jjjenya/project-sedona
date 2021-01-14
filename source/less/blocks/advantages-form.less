@@ -15,6 +15,10 @@
     font-size: 21px;
     width: 308px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 2px;
+  }
 }
 
 .advantages-form__list {
@@ -42,7 +46,7 @@
 .advantages-form__checkbox {
   position: absolute;
 
-  margin-left: -84px;
+  margin-left: -82px;
   margin-top: -14px;
 
   width: 56px;
@@ -61,13 +65,17 @@
     background: url("data:image/svg+xml,%3Csvg width='56' height='56' viewBox='0 0 56 56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.5' y='2.5' width='51' height='51' fill='%23D5D5D5' stroke='%23D5D5D5' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E") center no-repeat;
     background-size: 100%;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: -82px;
+  }
 }
 
 
 .advantages-form__field:checked + .advantages-form__checkbox::after {
   content: "";
   position: absolute;
-  right: 10px;
+  right: 12px;
   top: 17px;
   width: 24px;
   height: 17px;
@@ -129,6 +137,7 @@
   @media (min-width: @desktop-width) {
     padding-left: 0;
     margin-left: -58px;
+    padding-top: 58px;
   }
 }
 
@@ -136,12 +145,12 @@
   padding-top: 55px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 64px;
+    padding-top: 62px;
     padding-left: 150px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 60px;
+    padding-top: 59px;
     padding-left: 0;
     margin-left: -92px;
   }
@@ -151,7 +160,7 @@
   padding-top: 55px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 64px;
+    padding-top: 62px;
     padding-left: 86px;
   }
 
