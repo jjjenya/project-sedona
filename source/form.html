@@ -53,7 +53,7 @@
   <header class="page-header">
 
     <div class="page-header__line">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo" href="index.html" tabindex="1">
         <picture>
           <source media="(min-width: 1280px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -64,18 +64,18 @@
 
     <nav class="main-nav main-nav--closed main-nav--nojs">
 
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button" tabindex="-1"><span class="visually-hidden" >Открыть меню</span></button>
 
       <div class="main-nav__wrapper">
 
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">
+            <a class="main-nav__link" href="index.html" tabindex="2">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="main-nav__link" href="catalog.html" tabindex="3">
               Фото и видео
             </a>
           </li>
@@ -85,7 +85,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link" href="#" tabindex="4">
               HTML ACADEMY
             </a>
           </li>
@@ -129,17 +129,17 @@
             <ul class="full-name__list" role="none">
               <li class="full-name__item">
                 <label class="full-name__description" for="field-name">Имя*:</label>
-                <input class="full-name__field" type="text" name="name" id="field-name" placeholder="Петр" required>
+                <input class="full-name__field" type="text" name="name" id="field-name" placeholder="Петр" tabindex="8" required>
               </li>
               <li class="full-name__item">
                 <label class="full-name__description" for="field-surname">Фамилия*:</label>
                 <input class="full-name__field" type="text" name="surname" id="field-surname" placeholder="Иванов"
-                  required>
+                  required tabindex="9">
               </li>
               <li class="full-name__item">
                 <label class="full-name__description" for="field-patronymic">Отчество:</label>
                 <input class="full-name__field" type="text" name="patronymic" id="field-patronymic"
-                  placeholder="Александрович">
+                  placeholder="Александрович" tabindex="10">
               </li>
             </ul>
           </fieldset>
@@ -153,7 +153,7 @@
                 <label class="contacts-review__description" for="field-tel"><span
                     class="contacts-review__description--hidden">Контактный</span>&nbsp;телефон*:
                   <input class="contacts-review__field" type="tel" name="tel" id="field-tel"
-                    placeholder="Введите телефон" required>
+                    placeholder="Введите телефон" required tabindex=11>
                   <svg class="contacts-review__icon" width="58" height="58">
                     <use xlink:href="#icon-tel"></use>
                   </svg>
@@ -162,7 +162,7 @@
               <li class="contacts-review__item">
                 <label class="contacts-review__description" for="e-mail">Электронная почта*:
                   <input class="contacts-review__field" type="email" name="e-mail" id="e-mail"
-                    placeholder="Введите e-mail" required>
+                    placeholder="Введите e-mail" required tabindex="12">
                   <svg class="contacts-review__icon" width="58" height="58">
                     <use xlink:href="#icon-mail"></use>
                   </svg>
@@ -177,23 +177,23 @@
             <legend class="impression__title">Ваше общее впечатление:</legend>
             <ul class="impression__list" role="none">
               <li class="impression__item">
-                <label class="impression__description">
-                  <input class="impression__field" type="radio" name="result" value="positive" checked>
-                  <span class="impression__radio" tabindex="0"></span>
+                <label class="impression__description" >
+                  <input class="impression__field" type="radio" name="result" value="positive" checked tabindex="5">
+                  <span class="impression__radio" ></span>
                   Скорее положительное
                 </label>
               </li>
               <li class="impression__item">
-                <label class="impression__description">
-                  <input class="impression__field" type="radio" name="result" value="negative">
-                  <span class="impression__radio" tabindex="0"></span>
+                <label class="impression__description" >
+                  <input class="impression__field" type="radio" name="result" value="negative" tabindex="6">
+                  <span class="impression__radio" ></span>
                   Скорее отрицательное
                 </label>
               </li>
               <li class="impression__item">
-                <label class="impression__description">
-                  <input class="impression__field" type="radio" name="result" value="neutral">
-                  <span class="impression__radio" tabindex="0"></span>
+                <label class="impression__description" >
+                  <input class="impression__field" type="radio" name="result" value="neutral" tabindex="7">
+                  <span class="impression__radio" ></span>
                   Затрудняюсь ответить
                 </label>
               </li>
@@ -206,30 +206,30 @@
             <legend class="advantages-form__title">Посещенные достопримечательности:</legend>
             <ul class="advantages-form__list" role="none">
               <li class="advantages-form__item">
-                <label class="advantages-form__description" for="bridge">
-                  <input class="advantages-form__field" type="checkbox" id="bridge" checked>
-                  <span class="advantages-form__checkbox" tabindex="0"></span>
+                <label class="advantages-form__description" for="bridge" checked >
+                  <input class="advantages-form__field" type="checkbox" id="bridge" tabindex="13">
+                  <span class="advantages-form__checkbox" ></span>
                   Мост Дьявола
                 </label>
               </li>
               <li class="advantages-form__item">
                 <label class="advantages-form__description">
-                  <input class="advantages-form__field" type="checkbox" checked>
-                  <span class="advantages-form__checkbox" tabindex="0"></span>
+                  <input class="advantages-form__field" type="checkbox" checked tabindex="14">
+                  <span class="advantages-form__checkbox" ></span>
                   Гора-Колокол
                 </label>
               </li>
               <li class="advantages-form__item">
                 <label class="advantages-form__description">
-                  <input class="advantages-form__field" type="checkbox" checked>
-                  <span class="advantages-form__checkbox" tabindex="0"></span>
+                  <input class="advantages-form__field" type="checkbox" checked tabindex="15" >
+                  <span class="advantages-form__checkbox" ></span>
                   Слайд-парк
                 </label>
               </li>
               <li class="advantages-form__item">
                 <label class="advantages-form__description">
-                  <input class="advantages-form__field" type="checkbox">
-                  <span class="advantages-form__checkbox" tabindex="0"></span>
+                  <input class="advantages-form__field" type="checkbox" tabindex="16" >
+                  <span class="advantages-form__checkbox" ></span>
                   Красные скалы
                 </label>
               </li>
@@ -241,7 +241,7 @@
           <div class="emotion">
             <label class="emotion__description" for="field-emotion">Опишите свои эмоции:</label>
             <textarea class="emotion__field" name="emotion" id="field-emotion" rows="5"
-              placeholder="Опишите подробно все свои восторги"></textarea>
+              placeholder="Опишите подробно все свои восторги" tabindex="17" ></textarea>
           </div>
         </li>
       </ul>
@@ -298,6 +298,26 @@
     </div>
   </footer>
 
+  <!-- <section class="modal modal-fuilure">
+    <div class="modal-fuilure__text">
+      <h4 class="modal-fuilure__tittle">Что-то пошло не так!</h2>
+        <p class="modal-description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
+    <button class="button modal-ok" type="button">ОК</button>
+  </section>
+
+  <section class="modal modal-success">
+    <div class="modal-text">
+      <h4 class="modal-tittle">Ваш отзыв отправлен!</h2>
+        <p class="modal-description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы
+          опубликуем его на сайте.</p>
+    </div>
+    <div class="modal-success__button">
+      <button class="button modal-close" type="button">Закрыть окно</button>
+    </div>
+  </section> -->
+
+
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
@@ -313,6 +333,9 @@
         navMain.classList.remove('main-nav--opened');
       }
     });
+
+
+
   </script>
 
 </body>
