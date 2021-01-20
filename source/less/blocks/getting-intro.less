@@ -1,9 +1,6 @@
 .getting-intro {
   position: relative;
-  // margin-bottom: 27px;
-  // outline: 5px solid rgba(255, 81, 0, 0.981);
-  // outline-offset: -5px;
-  // height: 389px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
@@ -11,57 +8,38 @@
 
 .getting-intro__wrapper-image {
   position: relative;
-  // outline: 5px solid rgba(68, 0, 255, 0.981);
-  // outline-offset: -5px;
 
   background: url("../../img/back-mobile.jpg") center no-repeat;
-  // background-size: 389px 100%;
   background-size: 100%;
+  background-color: #304248;
 
   z-index: -1;
   height: 389px;
 
   @media (min-resolution: 2dppx) {
+    background-color: #304248;
     background-image: url("../../img/back-mobile@2x.jpg");
-    // background-size: 100%;
   }
 
-  // @media (min-width: 321px) {
-
-  //   background: url("../../img/background-foto-tablet.jpg") center no-repeat;
-  //   background-size: 100%;
-  // }
-
-  // &::before {
-  //   position: absolute;
-  //   right: auto;
-  //   left: auto;
-  //   top: 102px;
-  //   width: 203px;
-  //   height: 203px;
-  //   background-color: red;
-  //   content: "";
-  // }
-
-
   @media (min-width: @tablet-width) {
+
     height: 518px;
     background: url("../../img/back-tablet.jpg") center no-repeat;
     background-size: 100%;
+    background-color: #304248;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/back-tablet@2x.jpg");
-      // background-size: 100%;
     }
   }
 
   @media (min-width: @desktop-width) {
     background: url("../../img/back-desktop.jpg") center no-repeat;
     background-size: 100%;
+    background-color: #304248;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/back-desktop@2x.jpg");
-      // background-size: 100%;
     }
   }
 }
@@ -88,9 +66,6 @@
 }
 
 .getting-intro__image {
-  // outline: 5px solid rgba(0, 255, 145, 0.981);
-  // outline-offset: -5px;
-
   width: auto;
   height: 214px;
 
@@ -108,9 +83,6 @@
 .getting-intro__text {
   padding: 34px 18px 10px 17px;
   background-color: @white;
-
-  // outline: 5px solid rgba(0, 255, 145, 0.981);
-  // outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
     padding: 43.5px 124px 52.5px 124px;
@@ -137,17 +109,17 @@
   @media (min-width: @desktop-width) {
     padding-right: 250px;
     padding-left: 250px;
+    margin-top: 3px;
   }
 }
 
 .getting-intro__intro {
   color: @brown;
-  // color: tomato;
   font-size: 14px;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 13px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 13px;
+    padding-top: 10px;
   }
 }
