@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 
-  margin-top: 58px;
+  margin-top: 18px;
 
   display: flex;
   flex-direction: column;
@@ -12,11 +12,11 @@
   margin-left: 19px;
 
   @media (min-width: @tablet-width) {
-    margin: 83px 0 0 0;
+    margin: 20px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 80px;
+    margin-top: 20px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -72,5 +72,18 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     width: 100%;
+  }
+
+
+  &:hover {
+    outline: none;
+    background-color: @grey-dark-full-name;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @white;
+    outline: 4px solid @grey-dark-full-name;
+    outline-offset: -4px;
   }
 }

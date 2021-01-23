@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
 
-  <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+  <!-- <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
 
     <symbol viewBox="0 0 23 21" id="icon-like">
       <path
@@ -54,7 +55,7 @@
         d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" />
     </symbol>
 
-  </svg>
+  </svg> -->
 
   <header class="page-header">
 
@@ -63,7 +64,7 @@
         <picture>
           <source media="(min-width: 1280px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Седона">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
         </picture>
       </a>
     </div>
@@ -155,8 +156,8 @@
               <span class="foto__autor-text">Автор фото:</span>
               <span class="foto__autor-name">Борис</span><br>
               <p class="foto__like">
-                <svg class="foto__icon" width="23" height="21">
-                  <use xlink:href="#icon-like"></use>
+                <svg class="foto__icon" viewBox="0 0 23 21"  width="23" height="21">
+                  <use xlink:href="/img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="visually-hidden">Количество лайков:</span>
                 1350
@@ -192,8 +193,8 @@
               <span class="foto__autor-text">Автор фото:</span>
               <span class="foto__autor-name">Сергей</span><br>
               <p class="foto__like">
-                <svg class="foto__icon" width="23" height="21">
-                  <use xlink:href="#icon-like"></use>
+                <svg class="foto__icon" viewBox="0 0 23 21"  width="23" height="21">
+                  <use xlink:href="/img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="visually-hidden">Количество лайков:</span>
                 143
@@ -229,8 +230,8 @@
               <span class="foto__autor-text">Автор фото:</span>
               <span class="foto__autor-name">Петр</span><br>
               <p class="foto__like">
-                <svg class="foto__icon" width="23" height="21">
-                  <use xlink:href="#icon-like"></use>
+                <svg class="foto__icon" viewBox="0 0 23 21"  width="23" height="21">
+                  <use xlink:href="/img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="visually-hidden">Количество лайков:</span>
                 96
@@ -266,8 +267,8 @@
               <span class="foto__autor-text">Автор фото:</span>
               <span class="foto__autor-name">Антон</span><br>
               <p class="foto__like">
-                <svg class="foto__icon" width="23" height="21">
-                  <use xlink:href="#icon-like"></use>
+                <svg class="foto__icon" viewBox="0 0 23 21"  width="23" height="21">
+                  <use xlink:href="/img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="visually-hidden">Количество лайков:</span>
                 254
@@ -313,28 +314,28 @@
 
       <div class="video-control video__panel">
         <div class="video-control__scale">
-          <button class="video-control__handle" type="button"></button>
+          <button class="video-control__handle" type="button"><span class="visually-hidden">Воспользоваться бегунком прокрутки видео</span></button>
         </div>
 
         <div class="video-control__buttons">
           <button class="video-control__button video-control__button--replay" type="button">
             <span class="visually-hidden">Воспроизвести заново</span>
-            <svg class="video-control__icon video-control__icon--replay" width="16" height="20">
-              <use xlink:href="#icon-replay"></use>
+            <svg class="video-control__icon video-control__icon--replay" viewBox="0 0 16 20" width="16" height="20">
+              <use xlink:href="/img/sprite.svg#icon-replay"></use>
             </svg>
           </button>
 
           <button class="video-control__button video-control__button--subtitles" type="button">
             <span class="visually-hidden">Включить субтитры</span>
-            <svg class="video-control__icon video-control__icon--subtitles" width="32" height="20">
-              <use xlink:href="#icon-subtitles"></use>
+            <svg class="video-control__icon video-control__icon--subtitles" viewBox="0 0 32 20" width="32" height="20">
+              <use xlink:href="/img/sprite.svg#icon-subtitles"></use>
             </svg>
           </button>
 
           <button class="video-control__button video-control__button--fullscreen" type="button">
             <span class="visually-hidden">Развернуть во весь экран</span>
-            <svg class="video-control__icon video-control__icon--fullscreen" width="20" height="20">
-              <use xlink:href="#icon-fullscreen"></use>
+            <svg class="video-control__icon video-control__icon--fullscreen" viewBox="0 0 20 20" width="20" height="20">
+              <use xlink:href="/img/sprite.svg#icon-fullscreen"></use>
             </svg>
           </button>
         </div>
@@ -353,53 +354,46 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#" aria-label="Twitter">
-              <svg class="social__icon" width="46" height="48">
-                <use xlink:href="#icon-twitter"></use>
+              <svg class="social__icon" viewBox="-14 -15 46 48" width="46" height="48">
+                <use xlink:href="/img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#" aria-label="Facebook">
-              <svg class="social__icon" width="47" height="48">
-                <use xlink:href="#icon-facebook"></use>
+              <svg class="social__icon" viewBox="-17 -13 47 48"  width="47" height="48">
+                <use xlink:href="/img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="#" aria-label="Youtube">
-              <svg class="social__icon" width="46" height="48">
-                <use xlink:href="#icon-youtube"></use>
+              <svg class="social__icon" viewBox="-13 -16 46 48" width="46" height="48">
+                <use xlink:href="/img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
+          <!-- <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="Youtube">
+              <svg class="social__icon" viewBox="-13 -16 46 48" width="46" height="48">
+                <use xlink:href="/img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li> -->
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__icon" width="27" height="35">
-            <use xlink:href="#icon-copyright"></use>
+          <svg class="copyright__icon" viewBox="0 0 27 35" width="27" height="35">
+            <use xlink:href="/img/sprite.svg#icon-copyright"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
+  <script src="js/script.min.js">
   </script>
 
 </body>
