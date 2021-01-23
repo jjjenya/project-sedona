@@ -11,7 +11,7 @@
 
 <body class="page__body">
 
-  <!-- <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+  <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
 
     <symbol viewBox="0 0 58 58" id="icon-tel">
       <path
@@ -48,7 +48,7 @@
         d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" />
     </symbol>
 
-  </svg> -->
+  </svg>
 
 
   <header class="page-header">
@@ -144,11 +144,6 @@
                 <input class="full-name__field" type="text" name="patronymic" id="field-patronymic"
                   placeholder="Александрович" tabindex="10">
               </li>
-              <!-- <li class="full-name__item">
-                <label class="full-name__description" for="field-patronymic">Отчество:</label>
-                <input class="full-name__field" type="text" name="patronymic" id="field-patronymic"
-                  placeholder="Александрович" tabindex="10">
-              </li> -->
             </ul>
           </fieldset>
         </li>
@@ -162,8 +157,9 @@
                     class="contacts-review__description-tel">Контактный</span>&nbsp;телефон*:
                   <input class="contacts-review__field" type="tel" name="tel" id="field-tel"
                     placeholder="Введите телефон" required tabindex="11">
-                  <svg class="contacts-review__icon" viewBox="-20 -20 58 58" width="58" height="58">
-                    <use xlink:href="/img/sprite.svg#icon-tel"></use>
+                  <!-- <svg class="contacts-review__icon" viewBox="-20 -20 58 58" width="58" height="58"> -->
+                  <svg class="contacts-review__icon" width="58" height="58">
+                    <use xlink:href="#icon-tel"></use>
                   </svg>
                 </label>
               </li>
@@ -171,12 +167,13 @@
                 <label class="contacts-review__description" for="e-mail">Электронная почта*:
                   <input class="contacts-review__field" type="email" name="e-mail" id="e-mail"
                     placeholder="Введите e-mail" required tabindex="12">
-                  <svg class="contacts-review__icon" viewBox="-21 -24 58 58" width="58" height="58">
-                    <use xlink:href="/img/sprite.svg#icon-mail"></use>
+                  <!-- <svg class="contacts-review__icon" viewBox="-21 -24 58 58" width="58" height="58"> -->
+                  <svg class="contacts-review__icon" width="58" height="58">
+                    <use xlink:href="#icon-mail"></use>
                   </svg>
                 </label>
               </li>
-             </ul>
+            </ul>
           </fieldset>
         </li>
 
@@ -205,13 +202,6 @@
                   Затрудняюсь ответить
                 </label>
               </li>
-              <!-- <li class="impression__item">
-                <label class="impression__description">
-                  <input class="impression__field" type="radio" name="result" value="neutral" tabindex="7">
-                  <span class="impression__radio"></span>
-                  Затрудняюсь ответить
-                </label>
-              </li> -->
             </ul>
           </fieldset>
         </li>
@@ -248,28 +238,6 @@
                   Красные скалы
                 </label>
               </li>
-              <!-- <li class="advantages-form__item">
-                <label class="advantages-form__description">
-                  <input class="advantages-form__field" type="checkbox" tabindex="16">
-                  <span class="advantages-form__checkbox"></span>
-                  Красные скалы
-                </label>
-              </li>
-              <li class="advantages-form__item">
-                <label class="advantages-form__description">
-                  <input class="advantages-form__field" type="checkbox" tabindex="16">
-                  <span class="advantages-form__checkbox"></span>
-                  Красные скалы
-                </label>
-              </li>
-              <li class="advantages-form__item">
-                <label class="advantages-form__description">
-                  <input class="advantages-form__field" type="checkbox" tabindex="16">
-                  <span class="advantages-form__checkbox"></span>
-                  Красные скалы
-                </label>
-              </li> -->
-
             </ul>
           </fieldset>
         </li>
@@ -303,39 +271,32 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#" aria-label="Twitter">
-              <svg class="social__icon" viewBox="-14 -15 46 48" width="46" height="48">
-                <use xlink:href="/img/sprite.svg#icon-twitter"></use>
+              <svg class="social__icon" width="46" height="48">
+                <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#" aria-label="Facebook">
-              <svg class="social__icon" viewBox="-17 -13 47 48" width="47" height="48">
-                <use xlink:href="/img/sprite.svg#icon-facebook"></use>
+              <svg class="social__icon" width="47" height="48">
+                <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="#" aria-label="Youtube">
-              <svg class="social__icon" viewBox="-13 -16 46 48" width="46" height="48">
-                <use xlink:href="/img/sprite.svg#icon-youtube"></use>
+              <svg class="social__icon" width="46" height="48">
+                <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
           </li>
-          <!-- <li class="social__item">
-            <a class="social__link social__link--youtube" href="#" aria-label="Youtube">
-              <svg class="social__icon" viewBox="-13 -16 46 48" width="46" height="48">
-                <use xlink:href="/img/sprite.svg#icon-youtube"></use>
-              </svg>
-            </a>
-          </li> -->
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__icon" viewBox="0 0 27 35" width="27" height="35">
-            <use xlink:href="/img/sprite.svg#icon-copyright"></use>
+          <svg class="copyright__icon" width="27" height="35">
+            <use xlink:href="#icon-copyright"></use>
           </svg>
         </a>
       </div>

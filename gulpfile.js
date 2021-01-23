@@ -10,7 +10,7 @@ const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
-const svgstore = require("gulp-svgstore");
+// const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 // const cheerio = require("gulp-cheerio");
@@ -113,22 +113,22 @@ exports.createWebp = createWebp;
 
 // Sprite
 
-const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
-    .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"))
-    // .pipe(cheerio({
-    //   run: function ($) {
-    //     $('[fill]').removeAttr('fill');
-    //     $('[stroke]').removeAttr('stroke');
-    //     $('[style]').removeAttr('style');
-    //   },
-    //   parserOptions: {xmlMode: true}
-    // }))
-}
+// const sprite = () => {
+//   return gulp.src("source/img/icons/*.svg")
+//     .pipe(svgstore())
+//     .pipe(rename("sprite.svg"))
+//     .pipe(gulp.dest("build/img"))
+//     // .pipe(cheerio({
+//     //   run: function ($) {
+//     //     $('[fill]').removeAttr('fill');
+//     //     $('[stroke]').removeAttr('stroke');
+//     //     $('[style]').removeAttr('style');
+//     //   },
+//     //   parserOptions: {xmlMode: true}
+//     // }))
+// }
 
-exports.sprite = sprite;
+// exports.sprite = sprite;
 
 // Copy
 
@@ -193,7 +193,7 @@ const build = gulp.series(
     stylesmin,
     html,
     scripts,
-    sprite,
+    // sprite,
     copy,
     images,
     createWebp
@@ -210,7 +210,7 @@ exports.default = gulp.series(
     stylesmin,
     html,
     scripts,
-    sprite,
+    // sprite,
     copy,
     createWebp
   ),
