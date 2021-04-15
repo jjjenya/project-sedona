@@ -1,15 +1,20 @@
 # проект «Седона» 
 
-сайт туристического городка в штате Аризона
+
+**сайт туристического городка в штате Аризона:**
 
    * создание разметки по методологии БЭМ
-   * CSS-код на препроцессоре Less
+   * CSS на препроцессоре Less
    * адаптивная сетка
    * работа с адаптивной и ретиновой графикой
-   * подготовка автоматизацию сборки проекта для публикации
+   * подготовка автоматизации сборки проекта для публикации
+
 
 
 верстка: [Евгения Сабирова](https://github.com/jjjenya)
+
+
+---
 
 
 ## [DEMO ПРОЕКТА](https://jjjenya.github.io/project-sedona/) 
@@ -24,7 +29,7 @@
 
 
 
-**Как использовать**
+**Инструкция**
 
 
 `npm install` - установка зависимостей
@@ -45,7 +50,7 @@
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
-создан в рамках обучения 
-на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» 
+создан в рамках обучения
+на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)»
 от [HTML Academy](https://htmlacademy.ru),
 наставник [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport)
