@@ -2,13 +2,11 @@
 
 * верстка: [Евгения Сабирова](https://github.com/jjjenya)
 
-* [DEMO ПРОЕКТА](https://jjjenya.github.io/project-sedona/) 
+## [DEMO ПРОЕКТА](https://jjjenya.github.io/project-sedona/) 
 
-
-страницы:
-[главная](https://jjjenya.github.io/project-sedona/index.html) 
-[фото и видео](https://jjjenya.github.io/project-sedona/catalog.html) 
-[форма отзыва](https://jjjenya.github.io/project-sedona/form.html) 
+   1. [главная](https://jjjenya.github.io/project-sedona/index.html) 
+   2. [фото и видео](https://jjjenya.github.io/project-sedona/catalog.html) 
+   3. [форма отзыва](https://jjjenya.github.io/project-sedona/form.html) 
 
 
 ---
@@ -16,18 +14,17 @@
 
 **Как использовать**
 
-```
-npm install - установка зависимостей
 
-npm start - сборка проекта в режиме разработки и запуск локального сервера
+`npm install` - установка зависимостей
 
-npm test - запуск теста на наличие стилистических ошибок
+`npm start` - сборка проекта в режиме разработки и запуск локального сервера
 
-npm run build - финальная сборка проекта
+`npm test` - запуск теста на наличие стилистических ошибок
 
-npm run deploy - размещение проекта в GitHub Pages
+`npm run build` - финальная сборка проекта
 
-```
+`npm run deploy` - размещение проекта в GitHub Pages
+
 
 ---
 
