@@ -1680,7 +1680,7 @@ img {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .getting-intro-image__wrapper {
     background-color: #304248;
-    background-image: url("./img/back-mobile-form@2x.jpg");
+    background-image: url("../img/back-mobile-form@2x.jpg");
   }
 }
 @media (min-width: 768px) {
