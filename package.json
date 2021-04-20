@@ -25,7 +25,7 @@
     "stylelint": "^13.7.2",
     "stylelint-config-htmlacademy": "^0.1.4"
   },
-  "homepage": "https://jjenya.github.io/project-sedona",
+  "homepage": "https://jjjenya.github.io/project-sedona",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
