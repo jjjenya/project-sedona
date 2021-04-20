@@ -1670,7 +1670,7 @@ img {
 }
 .getting-intro-image__wrapper {
   position: relative;
-  background: url("../img/back-mobile-form.jpg") no-repeat;
+  background: url("../../img/back-mobile-form.jpg") no-repeat;
   background-position: 50% -53px;
   background-size: 100%;
   background-color: #304248;
@@ -1680,13 +1680,13 @@ img {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .getting-intro-image__wrapper {
     background-color: #304248;
-    background-image: url("../img/back-mobile-form@2x.jpg");
+    background-image: url("../../img/back-mobile-form@2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .getting-intro-image__wrapper {
     height: 290px;
-    background: url("../img/back-tablet-form.jpg") no-repeat;
+    background: url("../../img/back-tablet-form.jpg") no-repeat;
     background-position: 50% -55px;
     background-size: 100%;
     background-color: #304248;
@@ -1694,13 +1694,13 @@ img {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .getting-intro-image__wrapper {
-    background-image: url("../img/back-tablet-form@2x.jpg");
+    background-image: url("../../img/back-tablet-form@2x.jpg");
   }
 }
 @media (min-width: 1280px) {
   .getting-intro-image__wrapper {
     height: 301px;
-    background: url("../img/back-desktop-form.jpg") no-repeat;
+    background: url("../../img/back-desktop-form.jpg") no-repeat;
     background-position: 50% -55px;
     background-size: 100%;
     background-color: #304248;
@@ -1708,7 +1708,7 @@ img {
 }
 @media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 2dppx) {
   .getting-intro-image__wrapper {
-    background-image: url("../img/back-desktop-form@2x.jpg");
+    background-image: url("../../img/back-desktop-form@2x.jpg");
   }
 }
 .getting-intro-image__wrapper::after {
@@ -1718,12 +1718,12 @@ img {
   bottom: 0;
   width: 100%;
   height: 57px;
-  background: url("../img/intro-triangle-mobile.svg") center no-repeat;
+  background: url("../../img/intro-triangle-mobile.svg") center no-repeat;
   background-size: 100% 57px;
 }
 @media (min-width: 768px) {
   .getting-intro-image__wrapper::after {
-    background: url("../img/intro-triangle-desktop.svg") center no-repeat;
+    background: url("../../img/intro-triangle-desktop.svg") center no-repeat;
   }
 }
 .getting-intro-image__text {
