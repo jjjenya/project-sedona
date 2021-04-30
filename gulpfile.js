@@ -12,6 +12,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
 const sync = require("browser-sync").create();
+const svgstore = require("gulp-svgstore");
 // const ghPages = require('gulp-gh-pages');
 
 
@@ -89,6 +90,16 @@ const createWebp = () => {
 }
 
 
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/icon/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+}
+
+
 // Copy
 
 const copy = (done) => {
@@ -153,7 +164,7 @@ const build = gulp.series(
     stylesmin,
     html,
     scripts,
-    // sprite,
+    sprite,
     copy,
     images,
     createWebp
@@ -169,7 +180,7 @@ exports.default = gulp.series(
     stylesmin,
     html,
     scripts,
-    // sprite,
+    sprite,
     copy,
     createWebp
   ),
@@ -190,6 +201,7 @@ exports.stylesmin = stylesmin;
 exports.scripts = scripts;
 exports.images = images;
 exports.createWebp = createWebp;
+exports.sprite = sprite;
 exports.copy = copy;
 exports.server = server;
 exports.build = build;
